@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brian's Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        border: 1px double black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Brian's <i>Developer</i> Website</h1>
+      <nav id="global-header">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Hello! I'm Brian Mendez</h2>
+        <p>Introduction about you that hooks the audience...</p>
+        <img src="path_to_your_image" alt="A photo of Brian" />
+        <button>Contact Me</button>
+      </section>
 
+      <section id="about">
+        <h2>About Me</h2>
+        <pre>Testing whitespaces enabled     estes</pre>
+
+        <ol>
+          <h3>Work Experience</h3>
+          <li>Better Times Tutoring</li>
+          <li>Tree of Knowledge Tutoring Center</li>
+        </ol>
+
+        <table>
+          <h3>Skills</h3>
+          <tr>
+            <th>Front End</th>
+            <th>Back End</th>
+            <th>Soft Skills</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>JAVA</td>
+            <td>Good with others</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div>
+          <h3>Project Name</h3>
+          <video src="path_to_video" controls></video>
+          <p>Project description<span style="color:blue;font-weight:bold">frontend</span>...</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/action_page.php">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"/><br/><br/>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"/><br/><br/>
+          <input type="submit" value="Submit"/>
+        </form>
+      </section>
+    </main>
+
+    <hr/>
+
+    <footer>
+      <p>Find me here:</p>
+      <nav id="social-footer">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/brian-mendez-2530801b0/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/B1mendez">Github</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
