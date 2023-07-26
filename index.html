@@ -1,153 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Brian's Porfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto+Slab:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Molengo&family=Playfair+Display+SC&family=Roboto+Slab:wght@300&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      * {
-        border: 1px double black;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>Brian's Porfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto+Slab:wght@300&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Molengo&family=Playfair+Display+SC&family=Roboto+Slab:wght@300&display=swap"
+    rel="stylesheet" />
 
-      h1 {
-        font-family: "Cormorant Unicase", serif;
-      }
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --dark-color: #555A54;
+      --background-color: #BFBBAF;
+      --creme-color: #F7F2EF;
+      --grey-color: #E1DDD2;
+    }
 
-      h2,
-      h3 {
-        font-family: "Playfair Display SC", serif;
-      }
+    * {
+      -border: 1px double black;
+      margin: 0;
+      padding: 0;
+    }
 
-      p {
-        font-family: "Roboto Slab", serif;
-      }
+    body {
+      background-color: var(--creme-color);
 
-      #global-header {
-        font-family: "Playfair Display SC", serif;
-        width: 100%;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    }
 
-      #global-header h1 {
-        font-family: "Playfair Display SC", serif;
-        float: left;
-      }
+    h1 {
+      font-family: "Cormorant Unicase", serif;
+    }
 
-      #global-header nav {
-        float: right;
-        display: flex;
-      }
-      #global-header ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        float: right;
-      }
+    h2,
+    h3 {
+      font-family: "Playfair Display SC", serif;
+      text-align: center;
+    }
 
-      #global-header li {
-        vertical-align: middle;
-        float: left;
-      }
+    p {
+      font-family: "Roboto Slab", serif;
+    }
 
-      #global-header li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 12px 12px;
-        text-decoration: none;
-      }
+    #global-header {
+      font-family: "Playfair Display SC", serif;
+      width: 100%;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--dark-color);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-      #global-header li a:hover {
-        background-color: grey;
-      }
+    #global-header h1 {
+      font-family: "Playfair Display SC", serif;
+      float: left;
+      color: var(--creme-color);
+      font: italic;
+    }
 
-      #home {
-        display: flex;
-        justify-content: space-around; /* Centers the items horizontally */
-        align-items: center; /* Centers the items vertically */
-        gap: 20px; /* Provides space between the text-content and the image */
-      }
+    #global-header nav {
+      float: right;
+      display: flex;
+      padding-right: 40px;
+    }
 
-      .text-content {
-        max-width: 45%; /* Adjust as needed */
-      }
+    #global-header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      float: right;
+    }
 
-      #home img {
-        max-width: 45%; /* Adjust as needed */
-        object-fit: cover;
-      }
+    #global-header li {
+      vertical-align: middle;
+      float: left;
+    }
 
-      #home button {
-        display: block; /* This will make the button a block-level element, taking up its own line */
-        margin-top: 20px; /* Adds a bit of space above the button */
-      }
-    </style>
-  </head>
+    #global-header li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 12px 12px;
+      text-decoration: none;
+    }
 
-  <body>
-    <header id="global-header">
-      <h1>Brian's <i>Developer</i> Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <div class="text-content">
-          <h2><code>Hello!</code>I'm Brian Mendez</h2>
-          <p>Web Developer maybe... problem solver definitely</p>
-          <p>Get things done the right way</p>
-          <button>Contact Me</button>
-        </div>
-        <img src="path_to_your_image" alt="A photo of Brian" />
-      </section>
+    #global-header li a:hover {
+      background-color: grey;
+    }
 
-      <section id="about">
-        <h2>About Me</h2>
-        <pre>Brief description of who I am...</pre>
-        <audio controls>Your browser does not support the audio tag.</audio>
+    .home {
+      height: 90vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 5vh;
+    }
 
+    #landingPage-content {
+      max-width: 45%;
+      text-align: left;
+    }
+
+    .home img {
+      max-height: 80vh;
+      max-width: 45vw;
+      border-radius: 20%;
+      border: 0.5vw solid var(--dark-black);
+      margin: 1.0vh 1.0vw 1.0vh 1.0vw;
+      object-fit: contain;
+    }
+
+    #landingPage-content h2 {
+      padding: 30px 0;
+      text-align: left;
+    }
+
+    #landingPage-content p {
+      padding: 10px 0;
+    }
+
+    #landingPage-content button {
+      position: relative;
+      width: 130px;
+      height: 40px;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+      background: rgb(255, 27, 0);
+      background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+
+    }
+
+    #landingPage-content button:hover {
+      color: #f0094a;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    #landingPage-content button:before,
+    #landingPage-content button:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 2px;
+      width: 0;
+      background: #f0094a;
+      box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+      transition: 400ms ease all;
+    }
+
+    #landingPage-content button:after {
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+    }
+
+    #landingPage-content button:hover:before,
+    #landingPage-content button:hover:after {
+      width: 100%;
+      transition: 800ms ease all;
+    }
+
+    #about {
+      height: 100vh;
+      width: 100%;
+      align-items: center;
+      padding: 0 2% 0 2%;
+
+    }
+
+    #skills-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 200px;
+    }
+
+    .skill-category {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      padding: 20px;
+      transition: all .3s ease-in;
+    }
+
+    .skill-category>* {
+      padding: 10px;
+    }
+
+    .skill-category img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
+
+    .skill-category h3 {
+      padding: 20px 10px;
+      font-size: 1.5rem;
+    }
+
+    .skill-category p {
+      line-height: 20px;
+      font-size: 400;
+    }
+
+    /* .skill-category:hover {
+      background: blue;
+      color: #fff;
+      box-shadow: 0px 0px 11px 5px #000000;
+
+    } */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      margin: auto;
+    }
+
+    caption {
+      text-align: center;
+      font-size: 2em;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 20px;
+      vertical-align: top;
+    }
+
+    colgroup col {
+      width: 33.33%;
+    }
+
+    form {
+      position: relative;
+      width: 500px;
+      margin: 50px auto 100px auto;
+    }
+
+    input {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875em;
+      width: 470px;
+      height: 50px;
+      padding: 0px 15px 0px 15px;
+
+      background: transparent;
+      outline: none;
+      color: #726659;
+
+      border: solid 1px #b3aca7;
+      border-bottom: none;
+
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+
+    input:hover {
+      background: #b3aca7;
+      color: #e2dedb;
+    }
+
+    textarea {
+      width: 470px;
+      max-width: 470px;
+      height: 110px;
+      max-height: 110px;
+      padding: 15px;
+
+      background: transparent;
+      outline: none;
+
+      color: #726659;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875em;
+
+      border: solid 1px #b3aca7;
+
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+
+    textarea:hover {
+      background: #b3aca7;
+      color: #e2dedb;
+    }
+
+    #submit {
+      width: 502px;
+
+      padding: 0;
+      margin: -5px 0px 0px 0px;
+
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875em;
+      color: #b3aca7;
+
+      outline: none;
+      cursor: pointer;
+
+      border: solid 1px #b3aca7;
+      border-top: none;
+    }
+
+    #submit:hover {
+      color: #e2dedb;
+    }
+
+    #projects {
+      height: 100vh;
+      width: 100%;
+      padding: 50px;
+    }
+
+    .projects {
+      display: flex;
+      align-items: center;
+      max-width: 90rem;
+      margin: auto;
+      background-color: #fff;
+      padding: 2.5rem;
+      box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+      border-radius: 0.8rem;
+    }
+
+    .project-pic {
+      position: relative;
+      min-width: 35rem;
+      max-width: 35em;
+      height: 30rem;
+      transform: translate(-8rem);
+    }
+
+    .project-pic img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.8rem;
+    }
+
+    .project-pic::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+      border-radius: 0.8rem;
+      opacity: 0.5;
+    }
+
+    .project-date span {
+      display: block;
+      color: #8e8C8C;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    .project-title {
+      font-size: 2.5rem;
+      margin: 1.5rem 0 2rem;
+      text-transform: uppercase;
+      color: #4facfe;
+      text-align: left;
+    }
+
+    .project-info p {
+      margin-bottom: 3rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .project-link {
+      display: inline-block;
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      padding: 1rem 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 0.8rem;
+    }
+
+    .project-link:hover {
+      background-image: linear-gradient (to right,
+          #00f2fe 0%, #4facfe 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <header id="global-header">
+    <h1>Developer Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home">
+      <div id="landingPage-content">
+        <h2>Hello! I'm Brian Mendez</h2>
+        <p>Web Developer maybe... problem solver definitely</p>
+        <p>Get things done the right way</p>
+        <button>Contact Me</button>
+      </div>
+      <img src="/images/brian.jpg" alt="A photo of Brian" />
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <pre>Brief description of who I am...</pre>
+
+
+      <div id="skills-section">
         <div class="skill-category">
-          <img src="frontend-dev-img.jpg" alt="Frontend development image" />
+          <img src="/images/frontend.jpg" alt="Frontend development image" />
           <h3>Frontend Development</h3>
           <p>
             Strong knowledge in HTML, CSS, JavaScript, and frontend frameworks
-            like React and Vue. Experienced in building responsive and
-            user-friendly interfaces, implementing complex features, and
-            improving website performance.
+            like React. Experienced in building responsive and
+            user-friendly interfaces and improving website performance.
           </p>
         </div>
 
         <div class="skill-category">
-          <img src="backend-dev-img.jpg" alt="Backend development image" />
+          <img src="/images/backend.jpg" alt="Backend development image" />
           <h3>Backend Development</h3>
           <p>
             Proficient in Node.js, Express, and Python with Django. Able to
@@ -157,7 +467,7 @@
         </div>
 
         <div class="skill-category">
-          <img src="software-apis-img.jpg" alt="Software and APIs image" />
+          <img src="/images/software.jpg" alt="Software and APIs image" />
           <h3>Software & APIs</h3>
           <p>
             Experienced in integrating various APIs, utilizing cloud platforms,
@@ -166,7 +476,7 @@
         </div>
 
         <div class="skill-category">
-          <img src="soft-skills-img.jpg" alt="Soft skills image" />
+          <img src="/images/softskills.jpg" alt="Soft skills image" />
           <h3>Soft Skills</h3>
           <p>
             Effective communicator, great team player, and a strong problem
@@ -174,162 +484,94 @@
             multiple tasks and deadlines.
           </p>
         </div>
+      </div>
 
-        <table>
-          <caption>
-            Education and Work Experience
-          </caption>
-          <colgroup>
-            <col span="3" style="background-color: lightsteelblue" />
-          </colgroup>
-          <tr>
-            <th><b>2019</b></th>
-            <th><b>2021-2023</b></th>
-            <th><b>Present</b></th>
-          </tr>
-          <tr>
-            <td>
-              El Camino Real Charter H.S <br />
-              <em>Woodland Hills, CA</em>
-            </td>
-            <td>
-              B.S, Electrical and Computer Engineering <br />
-              <em>University of California, San Diego</em>
-            </td>
-            <td>
-              Better Times Tutoring Inc.<br />
-              <em>San Diego, CA</em>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              Tree of Knowledge Tutoring Center<br /><em>Mission Hills, CA</em>
-            </td>
-            <td></td>
-          </tr>
-        </table>
 
-        <details>
-          <summary>Why I do what I do?</summary>
-          <p>Creation, Building, and Exceeding</p>
-        </details>
-      </section>
+      <table>
+        <caption>
+          Education and Work Experience
+        </caption>
+        <colgroup>
+          <col />
+        </colgroup>
+        <tr>
+          <th><b>2019</b></th>
+          <th><b>2021-2023</b></th>
+          <th><b>Present</b></th>
+        </tr>
+        <tr>
+          <td>
+            El Camino Real Charter H.S <br />
+            <em>Woodland Hills, CA</em>
+          </td>
+          <td>
+            B.S, Electrical and Computer Engineering <br />
+            <em>University of California, San Diego</em>
+          </td>
+          <td>
+            Better Times Tutoring Inc.<br />
+            <em>San Diego, CA</em>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            Tree of Knowledge Tutoring Center<br /><em>Mission Hills, CA</em>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <video width="320" height="240" controls>
-          Your browser does not support the video tag.
-        </video>
-        <figure>
-          <h3>Better Times Tutoring</h3>
-          <iframe
-            width="400"
-            height="200"
-            src="https://bettertimestutoring.com/"
-            title="Better Times Tutoring Website"
-          ></iframe>
-          <p>Project description...</p>
-          <button>Learn More</button>
-        </figure>
-        <template>
-          <h3>Project Name</h3>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-pic">
           <picture>
-            <source media="(min-width:650px)" srcset="" />
-            <source media="(min-width:465px)" srcset="" />
-            <img src="" alt="Project 2" />
-            <figcaption>Project 2</figcaption>
+            <!-- <source media="(min-width:650px)" srcset="/images/logo.PNG" />
+            <source media="(min-width:465px)" srcset="/images/logo.PNG" /> -->
+            <img src="/images/logo.PNG" alt="Better Times Tutoring" />
           </picture>
-          <p>Project description...</p>
-          <button>Learn More</button>
-        </template>
-      </section>
+        </div>
+        <div class="project-info">
+          <div class="project-date">
+            <span>2022-Present</span>
+          </div>
+          <h2 class="project-title">Better Times Tutoring</h2>
+          <p>A tutoring website that offers a variety of academic resources and services to enhance student success and
+            achievement.</p>
+          <a class="https://bettertimestutoring.com/" href="better-times-tutoring.html">Learn More</a>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <fieldset>
-            <legend>Reach Out:</legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" /> <br />
-            <br />
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" /> <br />
-            <br />
-            <input type="submit" value="Submit" />
-          </fieldset>
-        </form>
-
-        <h2>Quick Question</h2>
-        <form>
-          <label for="inquiry">Type of Inquiry:</label>
-          <select id="inquiry" name="inquiry">
-            <optgroup label="Technical">
-              <option value="bug-report">Bug Report</option>
-              <option value="feature-request">Feature Request</option>
-            </optgroup>
-            <optgroup label="Non-Technical">
-              <option value="general-question">General Question</option>
-              <option value="career-opportunity">Career Opportunity</option>
-            </optgroup>
-          </select>
-          <br />
-          <textarea>Let me know here.</textarea>
-          <br />
-          <label for="lname">What browser are you viewinig this on: </label>
-          <input list="browsers" name="browser" id="browser" /> <br />
-          <br />
-          <datalist id="browsers">
-            <option value="Edge"></option>
-            <option value="Firefox"></option>
-            <option value="Chrome"></option>
-            <option value="Opera"></option>
-            <option value="Safari"></option>
-          </datalist>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
-
-      <section>
-        <canvas id="logoCanvas" width="200" height="200"></canvas>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /> <br />
         <br />
-        <svg width="100" height="100">
-          <circle
-            cx="50"
-            cy="50"
-            r="40"
-            stroke="black"
-            stroke-width="3"
-            fill="red"
-          />
-        </svg>
-        <script>
-          var canvas = document.getElementById("logoCanvas");
-          var context = canvas.getContext("2d");
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
 
-          context.font = "60px Arial";
-          context.fillStyle = "#800000";
-          context.fillText("B", 30, 70);
-          context.fillText("M", 100, 70);
-        </script>
-      </section>
-    </main>
+  <hr />
 
-    <hr />
+  <footer>
+    <p>Find me here:</p>
+    <aside id="social-footer">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/brian-mendez-2530801b0/">LinkedIn</a>
+        </li>
+        <li><a href="https://github.com/B1mendez">Github</a></li>
+      </ul>
+    </aside>
+  </footer>
+</body>
 
-    <footer>
-      <p>Find me here:</p>
-      <aside id="social-footer">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/brian-mendez-2530801b0/"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="https://github.com/B1mendez">Github</a></li>
-        </ul>
-      </aside>
-    </footer>
-  </body>
 </html>
