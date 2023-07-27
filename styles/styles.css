@@ -159,18 +159,16 @@ a {
   width: 130px;
   height: 40px;
   line-height: 42px;
+  margin-top: 12px;
   padding: 0;
   border: none;
-  background: rgb(255, 27, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 27, 0, 1) 0%,
-    rgba(251, 75, 2, 1) 100%
-  );
+  background: var(--dark-color);
+  color: var(--creme-color);
+  border-radius: 12px;
 }
 
 #landingPage-content button:hover {
-  color: #f0094a;
+  color: var(--dark-color);
   background: transparent;
   box-shadow: none;
 }
@@ -183,7 +181,8 @@ a {
   right: 0;
   height: 2px;
   width: 0;
-  background: #f0094a;
+  background: var(--dark-color);
+  border-radius: 12px;
   box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
     4px 4px 5px 0px #0002;
   transition: 400ms ease all;
@@ -259,13 +258,13 @@ a {
 
   } */
 
-.projects {
+#projects {
   max-width: 120rem;
   padding-inline: 1.5rem;
   margin-inline: auto;
 }
 
-.projects h2 {
+#projects h2 {
   padding: 3rem;
   font-size: 50px;
   font-weight: 600;
@@ -320,7 +319,17 @@ a {
   border-radius: 12px;
 }
 
-.contact {
+.project-link:hover {
+  display: inline-block;
+  color: var(--dark-color);
+  background-color: var(--creme-color);
+  padding: 1rem 2.5rem;
+  margin-top: 2.5rem;
+  border: 2px solid var(--creme-color);
+  border-radius: 12px;
+}
+
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,7 +339,7 @@ a {
   background-color: var(--grey-color);
 }
 
-.contact form {
+#contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,16 +352,16 @@ a {
   padding: 2rem;
 }
 
-.contact h2,
-.contact h3 {
+#contact h2,
+#contact h3 {
   text-align: center;
 }
 
-.contact label {
+#contact label {
   align-self: flex-start;
 }
 
-.contact input[type="text"] {
+#contact input[type="text"] {
   margin: 0.5em 0;
   width: 100%;
   border: 1px solid var(--dark-color);
@@ -361,8 +370,8 @@ a {
   font-size: pxtoem(16, 16);
 }
 
-.contact input[type="submit"] {
-  margin-top: 1em; /* add some margin to the top of the submit button */
+#contact input[type="submit"] {
+  margin-top: 1em;
   padding: 6px 10px;
   color: var(--creme-color);
   border: 1px solid var(--dark-color);
@@ -371,10 +380,9 @@ a {
   border-radius: 12px;
 }
 
-/* Style for when the user hovers over the submit button */
-.contact input[type="submit"]:hover {
+#contact input[type="submit"]:hover {
   background-color: var(--creme-color);
-  color: var(--grey-color);
+  color: var(--dark-color);
 }
 
 .footer {
