@@ -1,164 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brian's Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5b4b3e0211.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Brian's Porfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <script src="https://kit.fontawesome.com/5b4b3e0211.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header id="global-header">
+      <h1>Developer Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home">
+        <div id="landingPage-content">
+          <h2><strong>Hello! I'm Brian Mendez</strong></h2>
+          <p>Web Developer maybe... problem solver definitely</p>
+          <p>
+            I majored in Electrical and Computer Engineering but have built a
+            passion in Software Engineering and Web Development.
+          </p>
+          <button>Contact Me</button>
+        </div>
+        <img src="/images/brian.jpg" alt="A photo of Brian" />
+      </section>
 
-<body>
-  <header id="global-header">
-    <h1>Developer Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="home">
-      <div id="landingPage-content">
-        <h2><strong>Hello! I'm Brian Mendez</strong></h2>
-        <p>Web Developer maybe... problem solver definitely</p>
-        <p>I majored in Electrical and Computer Engineering but have built a passion in Software Engineering and Web Development.</p>
-        <button>Contact Me</button>
+      <section id="about">
+        <h2>About Me</h2>
+        <div id="skills-section">
+          <div class="skill-category">
+            <img src="/images/frontend.jpg" alt="Frontend development image" />
+            <h3>Frontend Development</h3>
+            <p>
+              Strong knowledge in HTML, CSS, JavaScript, and frontend frameworks
+              like React. Experienced in building responsive and user-friendly
+              interfaces and improving website performance.
+            </p>
+          </div>
+
+          <div class="skill-category">
+            <img src="/images/backend.jpg" alt="Backend development image" />
+            <h3>Backend Development</h3>
+            <p>
+              Proficient in Node.js, Express, and Python with Django. Able to
+              design and implement APIs, manage databases, and build secure and
+              scalable server-side applications.
+            </p>
+          </div>
+
+          <div class="skill-category">
+            <img src="/images/software.jpg" alt="Software and APIs image" />
+            <h3>Software & APIs</h3>
+            <p>
+              Experienced in integrating various APIs, utilizing cloud
+              platforms, and working with software like Postman and Git.
+            </p>
+          </div>
+
+          <div class="skill-category">
+            <img src="/images/softskills.jpg" alt="Soft skills image" />
+            <h3>Soft Skills</h3>
+            <p>
+              Effective communicator, great team player, and a strong problem
+              solver. Comfortable working in agile development teams and
+              handling multiple tasks and deadlines.
+            </p>
+          </div>
+        </div>
+
+        <table>
+          <caption>
+            Education and Work Experience
+          </caption>
+          <colgroup>
+            <col />
+          </colgroup>
+          <tr>
+            <th><b>2019</b></th>
+            <th><b>2021-2023</b></th>
+            <th><b>Present</b></th>
+          </tr>
+          <tr>
+            <td>
+              El Camino Real Charter H.S <br />
+              <em>Woodland Hills, CA</em>
+            </td>
+            <td>
+              B.S, Electrical and Computer Engineering <br />
+              <em>University of California, San Diego</em>
+            </td>
+            <td>
+              Better Times Tutoring Inc.<br />
+              <em>San Diego, CA</em>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              Tree of Knowledge Tutoring Center<br /><em>Mission Hills, CA</em>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <article class="project-container">
+          <div class="project-img">
+            <picture>
+              <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
+            </picture>
+          </div>
+          <div class="project-info">
+            <h2 class="project-title">Better Times Tutoring</h2>
+            <h3>2022-Present</h3>
+            <p>
+              A tutoring website that offers a variety of academic resources and
+              services to enhance student success and achievement.
+            </p>
+            <a class="project-link" href="https://bettertimestutoring.com/"
+              >Learn More</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <section class="contact">
+        <form>
+          <h2>Contact Me</h2>
+          <hr>
+          <h3>
+            Interested in Collaborating or <br />
+            have general questions?
+          </h3>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /> <br />
+          <br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /> <br />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+      <div id="copyright">
+        <span>© 2023 All rights reserved </span>
+        <a>License</a>
       </div>
-      <img src="/images/brian.jpg" alt="A photo of Brian" />
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <pre>Brief description of who I am...</pre>
-
-
-      <div id="skills-section">
-        <div class="skill-category">
-          <img src="/images/frontend.jpg" alt="Frontend development image" />
-          <h3>Frontend Development</h3>
-          <p>
-            Strong knowledge in HTML, CSS, JavaScript, and frontend frameworks
-            like React. Experienced in building responsive and
-            user-friendly interfaces and improving website performance.
-          </p>
-        </div>
-
-        <div class="skill-category">
-          <img src="/images/backend.jpg" alt="Backend development image" />
-          <h3>Backend Development</h3>
-          <p>
-            Proficient in Node.js, Express, and Python with Django. Able to
-            design and implement APIs, manage databases, and build secure and
-            scalable server-side applications.
-          </p>
-        </div>
-
-        <div class="skill-category">
-          <img src="/images/software.jpg" alt="Software and APIs image" />
-          <h3>Software & APIs</h3>
-          <p>
-            Experienced in integrating various APIs, utilizing cloud platforms,
-            and working with software like Postman and Git.
-          </p>
-        </div>
-
-        <div class="skill-category">
-          <img src="/images/softskills.jpg" alt="Soft skills image" />
-          <h3>Soft Skills</h3>
-          <p>
-            Effective communicator, great team player, and a strong problem
-            solver. Comfortable working in agile development teams and handling
-            multiple tasks and deadlines.
-          </p>
-        </div>
+      <div id="footer-links">
+        <a href="https://www.github/b1mendez" class="fa-brands fa-github"
+          >Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/brian-mendez-2530801b0/"
+          class="fa-brands fa-linkedin"
+          >LinkedIn</a
+        >
       </div>
-
-
-      <table>
-        <caption>
-          Education and Work Experience
-        </caption>
-        <colgroup>
-          <col />
-        </colgroup>
-        <tr>
-          <th><b>2019</b></th>
-          <th><b>2021-2023</b></th>
-          <th><b>Present</b></th>
-        </tr>
-        <tr>
-          <td>
-            El Camino Real Charter H.S <br />
-            <em>Woodland Hills, CA</em>
-          </td>
-          <td>
-            B.S, Electrical and Computer Engineering <br />
-            <em>University of California, San Diego</em>
-          </td>
-          <td>
-            Better Times Tutoring Inc.<br />
-            <em>San Diego, CA</em>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            Tree of Knowledge Tutoring Center<br /><em>Mission Hills, CA</em>
-          </td>
-          <td></td>
-        </tr>
-      </table>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
-      <article class="project-container">
-        <div class="project-img">
-          <picture>
-            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo">
-          </picture>
-        </div>
-        <div class="project-info">
-          <h2 class="project-title">Better Times Tutoring</h2>
-          <h3>2022-Present</h3>
-          <p>A tutoring website that offers a variety of academic resources and services to enhance student success and
-            achievement.</p>
-          <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
-        </div>
-      </article>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" /> <br />
-        <br />
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" /> <br />
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-  </main>
-
-  <hr />
-
-  <footer class="footer">
-    <div id="copyright">
-      <span>© 2023 All rights reserved </span>
-      <a>License</a>
-    </div>
-    <div id="footer-links">
-      <a href="https://www.github/b1mendez" class="fa-brands fa-github">Github</a>
-      <a href="https://www.linkedin.com/in/brian-mendez-2530801b0/"class="fa-brands fa-linkedin">LinkedIn</a>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
