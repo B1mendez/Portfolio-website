@@ -47,6 +47,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--creme-color);
 }
@@ -257,6 +261,46 @@ a {
     box-shadow: 0px 0px 11px 5px #000000;
 
   } */
+
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table caption {
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+colgroup col {
+  width: 33.33%;
+}
+
+table th {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+table td {
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+table em {
+  font-size: 0.8em;
+  color: #666;
+}
 
 #projects {
   max-width: 120rem;
@@ -477,7 +521,7 @@ a {
   #footer-links {
     font-size: 24px;
   }
-}
+}   
 
 @media (width < 600px) {
   #skills-section {
@@ -485,6 +529,52 @@ a {
     flex-direction: column;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 200px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  table tr {
+    margin: 0 0 1rem 0;
+    border-bottom: 2px solid #333;
+  }
+
+  table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  table td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  table td:nth-of-type(1):before {
+    content: "2019";
+  }
+  table td:nth-of-type(2):before {
+    content: "2021-2023";
+  }
+  table td:nth-of-type(3):before {
+    content: "Present";
   }
 
   .project-container {
