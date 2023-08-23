@@ -1,179 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Brian's Porfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/5b4b3e0211.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header id="global-header">
-      <h1>Developer Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="home">
-        <div id="landingPage-content">
-          <h2><strong>Hello! I'm Brian Mendez</strong></h2>
-          <p>Web Developer maybe... problem solver definitely</p>
-          <p>
-            I majored in Electrical and Computer Engineering but have built a
-            passion in Software Engineering and Web Development.
-          </p>
-          <button>Contact Me</button>
+<head>
+  <meta charset="UTF-8" />
+  <title>Brian's Porfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="https://kit.fontawesome.com/5b4b3e0211.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet">
+  <script src="\scripts\scroll.js"></script>
+</head>
+
+<body>
+  <header id="global-header">
+    <h1>DEVELOPER WEBSITE</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home">
+      <div id="landingPage-content">
+        <h2>BRIAN MENDEZ </h2>
+      </div>
+      <div id="landingPage-img">
+        <img id="img1" src="/images/brian.jpg" alt="A photo of Brian" />
+        <img id="img2" src="/images/space.jpg" alt="A photo of Brian" />
+        <img id="img3" src="/images/guitar.jpg" alt="A photo of Brian" />
+        <img id="img4" src="/images/agave.jpg" alt="A photo of Brian" />
+        <img id="img5" src="/images/fishing.jpg" alt="A photo of Brian" />
+      </div>
+    </section>
+
+    <section id="about" class="hidden">
+      <aside class="vertical-section">
+        <span class="section-number">01</span>
+        <hr>
+        <h2 class="vertical-title">ABOUT ME</h2>
+      </aside>
+      <article class="content-container">
+        <div id="test1">
+          <div id="introduction-container">
+            <h3>WHO AM I?</h3>
+            <h4>Aspring Developer</h4>
+            <p>While my academic background is in Electrical and Computer Engineering, my heart and soul belong to
+              Software Engineering and Web Development.
+              My relentless drive and passion fuel my work every day, and I'm currently seeking opportunities to bring
+              my commitment and skills to forward-thinking teams.</p>
+          </div>
+          <div class="pill-container">
+            <div class="pill-box">
+              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #007BFF);">
+                FRONTEND
+              </span>
+              <span class="pill-box-right">
+                HTML, CSS, JavaScript. Experienced in building responsive and user-friendly
+                interfaces and improving website performance.
+              </span>
+            </div>
+            <div class="pill-box">
+              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #8B5CF6);">
+                BACKEND
+              </span>
+              <span class="pill-box-right">
+                Proficient in Node.js, Express, and Python with Django. Able to
+                design and implement APIs, manage databases, and build secure and
+                scalable server-side applications.
+              </span>
+            </div>
+            <div class="pill-box">
+              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #FF6B6B);">
+                SOFT SKILLS
+              </span>
+              <span class="pill-box-right">
+                Effective communicator, great team player, and a strong problem
+                solver. Comfortable working in agile development teams and
+                handling multiple tasks and deadlines.
+              </span>
+            </div>
+          </div>
         </div>
-        <img src="/images/brian.jpg" alt="A photo of Brian" />
-      </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <div id="skills-section">
-          <div class="skill-category">
-            <img src="/images/frontend.jpg" alt="Frontend development image" />
-            <h3>Frontend Development</h3>
-            <p>
-              Strong knowledge in HTML, CSS, JavaScript, and frontend frameworks
-              like React. Experienced in building responsive and user-friendly
-              interfaces and improving website performance.
-            </p>
+        <div id="test2">
+          <div id="experience-container">
+            <h3>EDUCATION <br><span>&<span></span></h3>
+            <h3>EXPERIENCE</h3>
           </div>
-
-          <div class="skill-category">
-            <img src="/images/backend.jpg" alt="Backend development image" />
-            <h3>Backend Development</h3>
-            <p>
-              Proficient in Node.js, Express, and Python with Django. Able to
-              design and implement APIs, manage databases, and build secure and
-              scalable server-side applications.
-            </p>
-          </div>
-
-          <div class="skill-category">
-            <img src="/images/software.jpg" alt="Software and APIs image" />
-            <h3>Software & APIs</h3>
-            <p>
-              Experienced in integrating various APIs, utilizing cloud
-              platforms, and working with software like Postman and Git.
-            </p>
-          </div>
-
-          <div class="skill-category">
-            <img src="/images/softskills.jpg" alt="Soft skills image" />
-            <h3>Soft Skills</h3>
-            <p>
-              Effective communicator, great team player, and a strong problem
-              solver. Comfortable working in agile development teams and
-              handling multiple tasks and deadlines.
-            </p>
+          <div id="experience-box">
+            <div>
+              <span>2021-PRESENT</span>
+              <h3>BACHLOR IN COMPUTER ENGINEER</h3>
+              <span>UNIVERSITY OF CALIFORNIA, SAN DIEGO</span>
+            </div>
+            <div>
+              <span>2022-Present</span>
+              <h3>BETTER TIMES TUTORING</h3>
+              <span>SAN DIEGO, CA</span>
+            </div>
           </div>
         </div>
+      </article>
+    </section>
 
-        <table>
-          <caption>
-            Education and Work Experience
-          </caption>
-          <colgroup>
-            <col />
-          </colgroup>
-          <tr>
-            <th><b>2019</b></th>
-            <th><b>2021-2023</b></th>
-            <th><b>Present</b></th>
-          </tr>
-          <tr>
-            <td>
-              El Camino Real Charter H.S <br />
-              <em>Woodland Hills, CA</em>
-            </td>
-            <td>
-              B.S, Electrical and Computer Engineering <br />
-              <em>University of California, San Diego</em>
-            </td>
-            <td>
-              Better Times Tutoring Inc.<br />
-              <em>San Diego, CA</em>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              Tree of Knowledge Tutoring Center<br /><em>Mission Hills, CA</em>
-            </td>
-            <td></td>
-          </tr>
-        </table>
-      </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <article class="project-container">
-          <div class="project-img">
-            <picture>
-              <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
-            </picture>
+    <section id="projects" class="hidden">
+      <aside class="vertical-section">
+        <span class="section-number">02</span>
+        <hr>
+        <h2 class="vertical-title">PROJECTS</h2>
+      </aside>
+      <article class="content-container">
+        <div id="project1">
+          <div class="project-img-container">
+            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
           </div>
-          <div class="project-info">
-            <h2 class="project-title">Better Times Tutoring</h2>
-            <h3>2022-Present</h3>
+          <div class="project-description">
+            <span>2023</span>
+            <h3>INVOISYNC</h3>
+            <p>
+              InvoiSync is a dedicated desktop application, crafted using Electron js, tailor-made for 
+              'Daniel Mendez Landscaping Inc.' This robust platform offers a comprehensive suite of features 
+              to manage invoices, store crucial client data, and produce accurate estimates efficiently.
+            </p>
+            <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
+          </div>
+        </div>
+        <div id="project2">
+          <div class="project-img-container">
+            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
+          </div>
+          <div class="project-description">
+            <span>2022-Present</span>
+            <h3>Better Times Tutoring</h3>
             <p>
               A tutoring website that offers a variety of academic resources and
               services to enhance student success and achievement.
             </p>
-            <a class="project-link" href="https://bettertimestutoring.com/"
-              >Learn More</a
-            >
+            <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
           </div>
-        </article>
-      </section>
+        </div>
+        </div>
+        <div id="project3">
 
-      <section id="contact">
-        <form>
-          <h2>Contact Me</h2>
-          <hr>
-          <h3>
-            Interested in Collaborating or <br />
-            have general questions?
-          </h3>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /> <br />
-          <br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /> <br />
-          <br />
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
-    </main>
+        </div>
+        <div id="project4">
 
-    <hr />
+        </div>
+      </article>
+    </section>
 
-    <footer class="footer">
-      <div id="copyright">
-        <span>© 2023 All rights reserved </span>
-        <a>License</a>
-      </div>
-      <div id="footer-links">
-        <a href="https://www.github/b1mendez" class="fa-brands fa-github"
-          >Github</a
-        >
-        <a
-          href="https://www.linkedin.com/in/brian-mendez-2530801b0/"
-          class="fa-brands fa-linkedin"
-          >LinkedIn</a
-        >
-      </div>
-    </footer>
-  </body>
+    <section id="contact" class="hidden">
+      <form>
+        <h2>Contact Me</h2>
+        <hr>
+        <h3>
+          Interested in Collaborating or <br />
+          have general questions?
+        </h3>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /> <br />
+        <br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <hr />
+
+  <footer class="footer">
+    <div id="copyright">
+      <span>© 2023 All rights reserved </span>
+      <a>License</a>
+    </div>
+    <div id="footer-links">
+      <a href="https://www.github/b1mendez" class="fa-brands fa-github">Github</a>
+      <a href="https://www.linkedin.com/in/brian-mendez-2530801b0/" class="fa-brands fa-linkedin">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+
 </html>
