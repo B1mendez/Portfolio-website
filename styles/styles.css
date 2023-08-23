@@ -6,7 +6,7 @@
 }
 
 * {
-  -border: 1px double black;
+  -border: 1px double red;
   padding: 0;
   margin: 0;
 }
@@ -34,6 +34,7 @@ html {
   padding-left: 1.5rem;
   visibility: hidden;
   animation: headerAppear 2s forwards 1s;
+  z-index: 100;
 }
 
 #global-header nav {
@@ -41,6 +42,8 @@ html {
   padding-right: 1.5rem;
   visibility: hidden;
   animation: headerAppear 2s forwards 1s;
+  z-index: 100;
+  
 }
 
 @keyframes headerAppear {
@@ -244,13 +247,10 @@ html {
 
 #about {
   margin-inline: auto;
-  width: 100%;
   background-color: #000;
-  align-items: center;
   display: flex;
   gap: 50px;
-  height: 200vh;
-  position: relative;
+  align-items: baseline;
 }
 
 .vertical-section {
@@ -259,6 +259,8 @@ html {
   align-items: center;
   flex-basis: 20%;
   position: sticky;
+  top: 30vh;
+  margin-bottom: 25vh;
 }
 
 .vertical-title {
@@ -272,7 +274,8 @@ html {
 }
 
 .section-number {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Old Standard TT', serif;
+  font: bold;
   letter-spacing: 5px;
   font-size: 4vw;
   font-weight: 200;
@@ -434,11 +437,10 @@ html {
 
 #projects {
   margin-inline: auto;
-  width: 100%;
   background-color: #000;
-  align-items: center;
   display: flex;
   gap: 50px;
+  align-items: baseline;
 }
 
 #project1 {
@@ -449,38 +451,19 @@ html {
 }
 
 #project2 {
-  display: none;
+  display: flex;
   height: 100vh;
   align-items: center;
   justify-content: space-between;
-}
-
-#project3 {
-  display: none;
-  height: 100vh;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#project4 {
-  display: none;
-  height: 100vh;
-  align-items: center;
-  justify-content: space-between;
+  opacity: 1;
 }
 
 .project-img-container {
-  flex-basis: 40%;
-  align-items: center;
-  overflow: hidden; /* Added to contain child elements */
-  display: flex; /* Optional: if you want to center the image horizontally using justify-content */
-  justify-content: center; /* Optional: center the image horizontally */
+  flex-basis: 40%;  
 }
 
 .project-img-container img {
-  max-width: 100%; /* Ensures the image doesn't overflow its parent */
-  height: auto; /* Keeps the aspect ratio of the image */
-  display: block; /* Removes any extra space below the image */
+  max-width: 100%; 
 }
 
 .project-description {
@@ -495,6 +478,7 @@ html {
   line-height: 1.1;
   font-weight: 200;
   margin: 10px 0; 
+  text-transform: uppercase;
 }
 
 .project-description span {
@@ -508,66 +492,6 @@ html {
   line-height: 1.6;
   font-weight: 300;
 }
-
-
-/* .project-container {
-  display: flex;
-  background-color: var(--dark-color);
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: background-color 0.25s;
-}
-
-.project-img {
-  flex: 1;
-}
-
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  mix-blend-mode: var(--grey-color);
-}
-
-.project-info {
-  flex: 1;
-  padding: 5rem;
-  color: var(--creme-color);
-}
-
-.project-title {
-  color: var(--creme-color);
-  font-size: clamp(3rem, 5vw, 5rem);
-}
-
-.project-subtitle {
-  font-size: 1.4rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
-}
-
-.project-info p:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.project-link {
-  display: inline-block;
-  color: var(--creme-color);
-  padding: 1rem 2.5rem;
-  margin-top: 2.5rem;
-  border: 2px solid var(--creme-color);
-  border-radius: 12px;
-}
-
-.project-link:hover {
-  display: inline-block;
-  color: var(--dark-color);
-  background-color: var(--creme-color);
-  padding: 1rem 2.5rem;
-  margin-top: 2.5rem;
-  border: 2px solid var(--creme-color);
-  border-radius: 12px;
-} */
 
 #contact {
   display: flex;

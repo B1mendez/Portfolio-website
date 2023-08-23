@@ -9,8 +9,10 @@
   <script src="https://kit.fontawesome.com/5b4b3e0211.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap"
     rel="stylesheet">
+    
   <script src="\scripts\scroll.js"></script>
 </head>
 
@@ -46,52 +48,52 @@
         <hr>
         <h2 class="vertical-title">ABOUT ME</h2>
       </aside>
-      <article class="content-container">
-        <div id="test1">
-          <div id="introduction-container">
-            <h3>WHO AM I?</h3>
-            <h4>Aspring Developer</h4>
-            <p>While my academic background is in Electrical and Computer Engineering, my heart and soul belong to
-              Software Engineering and Web Development.
-              My relentless drive and passion fuel my work every day, and I'm currently seeking opportunities to bring
-              my commitment and skills to forward-thinking teams.</p>
+        <div class="content-container">
+          <div id="test1">
+            <div id="introduction-container">
+              <h3>WHO AM I?</h3>
+              <h4>Aspring Developer</h4>
+              <p>While my academic background is in Electrical and Computer Engineering, my heart and soul belong to
+                Software Engineering and Web Development.
+                My relentless drive and passion fuel my work every day, and I'm currently seeking opportunities to bring
+                my commitment and skills to forward-thinking teams.</p>
+            </div>
+            <div class="pill-container">
+              <div class="pill-box">
+                <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #007BFF);">
+                  FRONTEND
+                </span>
+                <span class="pill-box-right">
+                  HTML, CSS, JavaScript. Experienced in building responsive and user-friendly
+                  interfaces and improving website performance.
+                </span>
+              </div>
+              <div class="pill-box">
+                <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #8B5CF6);">
+                  BACKEND
+                </span>
+                <span class="pill-box-right">
+                  Proficient in Node.js, Express, and Python with Django. Able to
+                  design and implement APIs, manage databases, and build secure and
+                  scalable server-side applications.
+                </span>
+              </div>
+              <div class="pill-box">
+                <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #FF6B6B);">
+                  SOFT SKILLS
+                </span>
+                <span class="pill-box-right">
+                  Effective communicator, great team player, and a strong problem
+                  solver. Comfortable working in agile development teams and
+                  handling multiple tasks and deadlines.
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="pill-container">
-            <div class="pill-box">
-              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #007BFF);">
-                FRONTEND
-              </span>
-              <span class="pill-box-right">
-                HTML, CSS, JavaScript. Experienced in building responsive and user-friendly
-                interfaces and improving website performance.
-              </span>
-            </div>
-            <div class="pill-box">
-              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #8B5CF6);">
-                BACKEND
-              </span>
-              <span class="pill-box-right">
-                Proficient in Node.js, Express, and Python with Django. Able to
-                design and implement APIs, manage databases, and build secure and
-                scalable server-side applications.
-              </span>
-            </div>
-            <div class="pill-box">
-              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #FF6B6B);">
-                SOFT SKILLS
-              </span>
-              <span class="pill-box-right">
-                Effective communicator, great team player, and a strong problem
-                solver. Comfortable working in agile development teams and
-                handling multiple tasks and deadlines.
-              </span>
-            </div>
-          </div>
-        </div>
 
         <div id="test2">
           <div id="experience-container">
-            <h3>EDUCATION <br><span>&<span></span></h3>
+            <h3>EDUCATION <br> <span>&</span></h3>
             <h3>EXPERIENCE</h3>
           </div>
           <div id="experience-box">
@@ -107,9 +109,8 @@
             </div>
           </div>
         </div>
-      </article>
+      </div>
     </section>
-
 
     <section id="projects" class="hidden">
       <aside class="vertical-section">
@@ -117,14 +118,11 @@
         <hr>
         <h2 class="vertical-title">PROJECTS</h2>
       </aside>
-      <article class="content-container">
+      <div class="content-container">
         <div id="project1">
-          <div class="project-img-container">
-            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
-          </div>
           <div class="project-description">
             <span>2023</span>
-            <h3>INVOISYNC</h3>
+            <h3>InvoiSync</h3>
             <p>
               InvoiSync is a dedicated desktop application, crafted using Electron js, tailor-made for 
               'Daniel Mendez Landscaping Inc.' This robust platform offers a comprehensive suite of features 
@@ -132,11 +130,12 @@
             </p>
             <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
           </div>
-        </div>
-        <div id="project2">
           <div class="project-img-container">
-            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
+            <img src="/images/space.jpg" alt="Better Times Tutoring Logo" />
           </div>
+        </div>
+
+        <div id="project2">
           <div class="project-description">
             <span>2022-Present</span>
             <h3>Better Times Tutoring</h3>
@@ -146,15 +145,10 @@
             </p>
             <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
           </div>
-        </div>
-        </div>
-        <div id="project3">
-
-        </div>
-        <div id="project4">
-
-        </div>
-      </article>
+          <div class="project-img-container">
+            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
+          </div>
+      </div>
     </section>
 
     <section id="contact" class="hidden">
