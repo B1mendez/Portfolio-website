@@ -33,7 +33,7 @@ html {
   color: #fff;
   padding-left: 1.5rem;
   visibility: hidden;
-  animation: headerAppear 2s forwards 1s;
+  animation: headerAppear 2s forwards 1.5s;
   z-index: 100;
 }
 
@@ -41,7 +41,7 @@ html {
   display: flex;
   padding-right: 1.5rem;
   visibility: hidden;
-  animation: headerAppear 2s forwards 1s;
+  animation: headerAppear 2s forwards 1.5s;
   z-index: 100;
   
 }
@@ -92,6 +92,7 @@ html {
   width: 100%;
   background-color: #000;
   position: relative;
+  margin-bottom: 10vh;
 }
 
 .home h2 {
@@ -102,7 +103,7 @@ html {
   font-weight: 300;
   opacity: 0;
   visibility: hidden;
-  animation: fadeIn 2s forwards 1s;
+  animation: fadeIn 2s forwards 0.5s;
 }
 
 @keyframes fadeIn {
@@ -134,12 +135,25 @@ html {
 }
 
 #img1 {
-  width: 10%;
+  width: 12%;
   position: absolute;
   left: 50%;
   top: 50%;
-  opacity: 1;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeIn 2s forwards 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 #img2,
@@ -155,23 +169,23 @@ html {
 }
 
 #img1 {
-  animation: floatim1 2s forwards 1.5s;
+  animation: floatim1 1s forwards 1.5s;
 }
 
 #img2 {
-  animation: floatim2 2s forwards 1.5s;
+  animation: floatim2 1s forwards 1.5s;
 }
 
 #img3 {
-  animation: floatim3 2s forwards 1.5s;
+  animation: floatim3 1s forwards 1.5s;
 }
 
 #img4 {
-  animation: floatim4 2s forwards 1.5s;
+  animation: floatim4 1s forwards 1.5s;
 }
 
 #img5 {
-  animation: floatim5 2s forwards 1.5s;
+  animation: floatim5 1s forwards 1.5s;
 }
 
 @-webkit-keyframes floatim1 {
@@ -184,7 +198,7 @@ html {
   100% {
     left: 75%;
     top: 25%;
-    opacity: 0.4;
+    opacity: 0.3;
 
   }
 }
@@ -199,7 +213,7 @@ html {
   100% {
     left: 15%;
     top: 75%;
-    opacity: 0.4;
+    opacity: 0.3;
   }
 }
 
@@ -213,7 +227,7 @@ html {
   100% {
     left: 35%;
     top: 15%;
-    opacity: 0.4;
+    opacity: 0.3;
   }
 }
 
@@ -226,8 +240,8 @@ html {
 
   100% {
     left: 90%;
-    top: 70%;
-    opacity: 0.4;
+    top: 80%;
+    opacity: 0.3;
   }
 }
 
@@ -239,9 +253,9 @@ html {
   }
 
   100% {
-    left: 15%;
+    left: 5%;
     top: 35%;
-    opacity: 0.4;
+    opacity: 0.3;
   }
 }
 
@@ -275,7 +289,6 @@ html {
 
 .section-number {
   font-family: 'Old Standard TT', serif;
-  font: bold;
   letter-spacing: 5px;
   font-size: 4vw;
   font-weight: 200;
@@ -296,6 +309,7 @@ html {
   width: 100%;
   display: block;
   height: 200vh;
+  margin-right: 20px;
 }
 
 .content-container > div {
