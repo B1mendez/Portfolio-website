@@ -100,7 +100,7 @@ html {
   letter-spacing: 25px;
   color: #fff;
   font-size: 10.7vw;
-  font-weight: 300;
+  font-weight: 500;
   opacity: 0;
   visibility: hidden;
   animation: fadeIn 2s forwards 0.5s;
@@ -281,7 +281,7 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 5px;
   font-size: 1.5vw;
-  font-weight: 200;
+  font-weight: 500;
   color: #fff;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -291,7 +291,7 @@ html {
   font-family: 'Old Standard TT', serif;
   letter-spacing: 5px;
   font-size: 4vw;
-  font-weight: 200;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 10px;
 }
@@ -347,12 +347,12 @@ html {
 #introduction-container h4 {
   margin: 1rem 0;
   color: #007BFF;
-  font-weight: 400; 
+  font-weight: 500; 
 }
 
 #introduction-container p {
   line-height: 1.6; 
-  font-weight: 300; 
+  font-weight: 500; 
   font-size: 1rem;
 }
 
@@ -382,7 +382,7 @@ html {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3vw;
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
   display: flex; /* Added for centering */
   align-items: center; /* Vertically centers the text */
@@ -398,7 +398,7 @@ html {
   justify-content: center; 
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1vw;
-  font-weight: 100;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -411,7 +411,7 @@ html {
 #experience-container h3 {
   color: #fff; 
   font-size: 4vw;
-  font-weight: 100;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -440,7 +440,7 @@ html {
 
 #experience-box h3 {
   font-size: 3.5vw; 
-  font-weight: 100;
+  font-weight: 500;
   margin: 10px 0; 
 }
 
@@ -490,7 +490,7 @@ html {
 .project-description h3 {
   font-size: 3.5vw; 
   line-height: 1.1;
-  font-weight: 200;
+  font-weight: 500;
   margin: 10px 0; 
   text-transform: uppercase;
 }
@@ -504,17 +504,39 @@ html {
   margin: 2rem 0;
   padding-right: 5rem;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 #contact {
-  display: flex;
-  flex-direction: column;
+  background-color: #000;
+  height: auto;
   align-items: center;
-  justify-content: center;
+
+}
+
+#contact-heading {
   height: 100vh;
-  margin-top: 8rem;
-  background-color: var(--grey-color);
+}
+
+#contact-heading h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  letter-spacing: 15px;
+  font-size: 15.7vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#contact-info {
+  height: 100vh;
+}
+#contact-info h2,h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  letter-spacing: 15px;
+  font-size: 7.7vw;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 #contact form {
@@ -672,66 +694,6 @@ html {
     flex-direction: column;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 200px;
-  }
-
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
-
-  table thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  table tr {
-    margin: 0 0 1rem 0;
-    border-bottom: 2px solid #333;
-  }
-
-  table td {
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  table td:before {
-    position: absolute;
-    top: 0;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
-  table td:nth-of-type(1):before {
-    content: "2019";
-  }
-
-  table td:nth-of-type(2):before {
-    content: "2021-2023";
-  }
-
-  table td:nth-of-type(3):before {
-    content: "Present";
-  }
-
-  .project-container {
-    flex-direction: column;
-  }
-
-  .project-info {
-    padding: 2.5rem;
-  }
-
-  .project-link {
-    margin-top: 1.5rem;
   }
 
   .footer {
