@@ -342,6 +342,7 @@ html {
   padding-bottom: 6rem;
   color: #fff; 
   font-size: 4vw;
+  letter-spacing: 5px;
 }
 
 #introduction-container h4 {
@@ -382,7 +383,7 @@ html {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3vw;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   display: flex; /* Added for centering */
   align-items: center; /* Vertically centers the text */
@@ -442,6 +443,7 @@ html {
   font-size: 3.5vw; 
   font-weight: 500;
   margin: 10px 0; 
+  letter-spacing: 5px;
 }
 
 #experience-box span {
@@ -485,6 +487,7 @@ html {
   color: #fff;
   flex-basis: 60%;
   padding: 0.5rem ;
+
 }
 
 .project-description h3 {
@@ -493,6 +496,7 @@ html {
   font-weight: 500;
   margin: 10px 0; 
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .project-description span {
