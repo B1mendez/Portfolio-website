@@ -6,7 +6,7 @@
 }
 
 * {
-  -border: 1px double red;
+  border: 1px double red;
   padding: 0;
   margin: 0;
 }
@@ -43,7 +43,7 @@ html {
   visibility: hidden;
   animation: headerAppear 2s forwards 1.5s;
   z-index: 100;
-  
+
 }
 
 @keyframes headerAppear {
@@ -312,8 +312,9 @@ html {
   margin-right: 20px;
 }
 
-.content-container > div {
-  transition: opacity 0.5s; /* Add smooth transition */
+.content-container>div {
+  transition: opacity 0.5s;
+  /* Add smooth transition */
 }
 
 #test1 {
@@ -340,7 +341,7 @@ html {
 
 #introduction-container h3 {
   padding-bottom: 6rem;
-  color: #fff; 
+  color: #fff;
   font-size: 4vw;
   letter-spacing: 5px;
 }
@@ -348,18 +349,18 @@ html {
 #introduction-container h4 {
   margin: 1rem 0;
   color: #007BFF;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 #introduction-container p {
-  line-height: 1.6; 
-  font-weight: 500; 
+  line-height: 1.6;
+  font-weight: 500;
   font-size: 1rem;
 }
 
 .pill-container {
   flex-basis: 60%;
-  padding: 0.5rem ;
+  padding: 0.5rem;
 }
 
 .pill-box {
@@ -373,30 +374,33 @@ html {
   margin-bottom: 1rem;
 }
 
-.pill-box-left { 
+.pill-box-left {
   padding: 1.3rem 1.5rem;
   border-radius: 2.5rem;
   position: relative;
   height: auto;
   min-height: 9rem;
-  padding: 0.5rem; 
+  padding: 0.5rem;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3vw;
   font-weight: 400;
   color: #fff;
-  display: flex; /* Added for centering */
-  align-items: center; /* Vertically centers the text */
-  justify-content: center; /* Horizontally centers the text */
+  display: flex;
+  /* Added for centering */
+  align-items: center;
+  /* Vertically centers the text */
+  justify-content: center;
+  /* Horizontally centers the text */
 }
 
 .pill-box-right {
   border-left: 0;
-  padding: 0.5rem; 
+  padding: 0.5rem;
   text-align: center;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1vw;
   font-weight: 300;
@@ -410,7 +414,7 @@ html {
 }
 
 #experience-container h3 {
-  color: #fff; 
+  color: #fff;
   font-size: 4vw;
   font-weight: 500;
   text-align: center;
@@ -418,7 +422,7 @@ html {
 
 #experience-container h3 span {
   display: block;
-  text-align: center; 
+  text-align: center;
 }
 
 #experience-box {
@@ -440,15 +444,15 @@ html {
 }
 
 #experience-box h3 {
-  font-size: 3.5vw; 
+  font-size: 3.5vw;
   font-weight: 500;
-  margin: 10px 0; 
+  margin: 10px 0;
   letter-spacing: 5px;
 }
 
 #experience-box span {
-  font-size: 1.0vw; 
-  display: block; 
+  font-size: 1.0vw;
+  display: block;
 }
 
 #projects {
@@ -475,36 +479,36 @@ html {
 }
 
 .project-img-container {
-  flex-basis: 40%;  
+  flex-basis: 40%;
 }
 
 .project-img-container img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .project-description {
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   flex-basis: 60%;
-  padding: 0.5rem ;
+  padding: 0.5rem;
 
 }
 
 .project-description h3 {
-  font-size: 3.5vw; 
+  font-size: 3.5vw;
   line-height: 1.1;
   font-weight: 500;
-  margin: 10px 0; 
+  margin: 10px 0;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 .project-description span {
-  font-size: 1.0vw; 
+  font-size: 1.0vw;
 }
 
 .project-description p {
-  font-size: 1.0vw; 
+  font-size: 1.0vw;
   margin: 2rem 0;
   padding-right: 5rem;
   line-height: 1.6;
@@ -513,37 +517,48 @@ html {
 
 #contact {
   background-color: #000;
-  height: auto;
-  align-items: center;
-
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
 #contact-heading {
   height: 100vh;
+  text-align: center;
 }
 
 #contact-heading h3 {
+  top: 50%;
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   letter-spacing: 15px;
   font-size: 15.7vw;
   font-weight: 400;
   text-transform: uppercase;
+  transform: translateY(-50);
 }
 
 #contact-info {
   height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#contact-info h2,h3 {
+
+#contact-info h2,
+h3 {
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   letter-spacing: 15px;
-  font-size: 7.7vw;
+  font-size: 4.7vw;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-#contact form {
+/* #contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -554,9 +569,9 @@ html {
   border: 1px solid lighten(var(--creme-color), 1%);
   border-bottom: 3px solid var(--creme-color);
   padding: 2rem;
-}
+} */
 
-#contact h2,
+/* #contact h2,
 #contact h3 {
   text-align: center;
 }
@@ -586,8 +601,9 @@ html {
 
 #contact input[type="submit"]:hover {
   background-color: var(--creme-color);
-  color: var(--dark-color);
-}
+  color: var(--dark-color); 
+}*/
+
 
 .footer {
   display: flex;
