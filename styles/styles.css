@@ -25,6 +25,11 @@ html {
   background-color: #000;
 }
 
+#global-header img {
+  max-width: 5%;            /* Maximum width, adjust this value if needed */
+  max-height: 100%;          /* Maximum height */
+}
+
 #global-header h1 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 8px;
@@ -135,7 +140,7 @@ html {
 }
 
 #img1 {
-  width: 12%;
+  width: 10%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -156,11 +161,44 @@ html {
   }
 }
 
-#img2,
-#img3,
-#img4,
+#img2 {
+  width: 14%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+#img4 {
+  width: 14%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+#img3 {
+  width: 16%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
 #img5 {
-  width: 12%;
+  width: 15%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+#img6 {
+  width: 15%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -169,23 +207,27 @@ html {
 }
 
 #img1 {
-  animation: floatim1 1s forwards 1.5s;
+  animation: floatim1 2s forwards 2s;
 }
 
 #img2 {
-  animation: floatim2 1s forwards 1.5s;
+  animation: floatim2 2s forwards 2s;
 }
 
 #img3 {
-  animation: floatim3 1s forwards 1.5s;
+  animation: floatim3 2s forwards 2s;
 }
 
 #img4 {
-  animation: floatim4 1s forwards 1.5s;
+  animation: floatim4 2s forwards 2s;
 }
 
 #img5 {
-  animation: floatim5 1s forwards 1.5s;
+  animation: floatim5 2s forwards 2s;
+}
+
+#img6 {
+  animation: floatim6 2s forwards 2s;
 }
 
 @-webkit-keyframes floatim1 {
@@ -196,8 +238,8 @@ html {
   }
 
   100% {
-    left: 75%;
-    top: 25%;
+    left: 15%;
+    top: 75%;
     opacity: 0.3;
 
   }
@@ -211,8 +253,8 @@ html {
   }
 
   100% {
-    left: 15%;
-    top: 75%;
+    left: 93%;
+    top: 10%;
     opacity: 0.3;
   }
 }
@@ -227,7 +269,7 @@ html {
   100% {
     left: 35%;
     top: 15%;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
@@ -241,7 +283,7 @@ html {
   100% {
     left: 90%;
     top: 80%;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
@@ -255,7 +297,21 @@ html {
   100% {
     left: 5%;
     top: 35%;
-    opacity: 0.3;
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes floatim6 {
+  0% {
+    left: 50%;
+    top: 50%;
+    opacity: 0.7;
+  }
+
+  100% {
+    left: 74%;
+    top: 40%;
+    opacity: 0.4;
   }
 }
 
@@ -308,7 +364,6 @@ html {
 .content-container {
   width: 100%;
   display: block;
-  height: 200vh;
   margin-right: 20px;
 }
 
@@ -398,8 +453,9 @@ html {
   align-items: center; 
   justify-content: center; 
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1vw;
-  font-weight: 300;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -474,12 +530,21 @@ html {
   opacity: 1;
 }
 
+#project3 {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 1;
+}
+
 .project-img-container {
   flex-basis: 40%;  
 }
 
 .project-img-container img {
   max-width: 100%; 
+  border-radius: 50%;
 }
 
 .project-description {
@@ -487,7 +552,7 @@ html {
   color: #fff;
   flex-basis: 60%;
   padding: 0.5rem ;
-
+  text-transform: uppercase;
 }
 
 .project-description h3 {
@@ -504,11 +569,12 @@ html {
 }
 
 .project-description p {
-  font-size: 1.0vw; 
   margin: 2rem 0;
   padding-right: 5rem;
   line-height: 1.6;
   font-weight: 500;
+  font-size: 1rem;
+  text-transform: none;
 }
 
 #contact {
