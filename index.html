@@ -1,179 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Brian's Porfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/5b4b3e0211.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header id="global-header">
-      <h1>Developer Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="home">
-        <div id="landingPage-content">
-          <h2><strong>Hello! I'm Brian Mendez</strong></h2>
-          <p>Web Developer maybe... problem solver definitely</p>
-          <p>
-            I majored in Electrical and Computer Engineering but have built a
-            passion in Software Engineering and Web Development.
-          </p>
-          <button>Contact Me</button>
+<head>
+  <meta charset="UTF-8" />
+  <title>Brian's Porfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="https://kit.fontawesome.com/5b4b3e0211.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <script src="\scripts\scroll.js"></script>
+</head>
+
+<body>
+  <header id="global-header">
+    <h1>DEVELOPER WEBSITE</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home">
+      <div id="landingPage-content">
+        <h2>BRIAN MENDEZ </h2>
+      </div>
+      <div id="landingPage-img">
+        <img id="img1" src="/images/brian.jpg" alt="A photo of Brian" />
+        <img id="img2" src="/images/blackhole.jpg" alt="A photo of Brian" />
+        <img id="img3" src="/images/guitar2.png" alt="A photo of Brian" />
+        <img id="img4" src="/images/driving.jpg" alt="A photo of Brian" />
+        <img id="img5" src="/images/fishing.jpg" alt="A photo of Brian" />
+        <img id="img6" src="/images/computer.jpg" alt="A photo of Brian" />
+
+      </div>
+    </section>
+
+    <section id="about" class="hidden">
+      <aside class="vertical-section">
+        <span class="section-number">01</span>
+        <hr>
+        <h2 class="vertical-title">ABOUT ME</h2>
+      </aside>
+      <div class="content-container">
+        <div id="test1">
+          <div id="introduction-container">
+            <h3>WHO AM I?</h3>
+            <h4>Aspring Developer</h4>
+            <p>
+              I am a Computer Engineering graduate with a deep-rooted passion for Software Engineering and Web
+              Development.
+              My education has honed my problem-solving skills, making me a relentless and dedicated developer. Now, I'm
+              eager to
+              apply my expertise in the Software Engineering domain and Web Developement space.
+            </p>
+          </div>
+          <div class="pill-container">
+            <div class="pill-box">
+              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #007BFF); border: 2px solid #007BFF;">
+                FRONTEND
+              </span>
+              <span class="pill-box-right">
+                HTML, CSS, JavaScript. Experienced in building responsive and user-friendly
+                interfaces and improving website performance.
+              </span>
+            </div>
+            <div class="pill-box">
+              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #8B5CF6); border: 2px solid #8B5CF6">
+                BACKEND
+              </span>
+              <span class="pill-box-right">
+                Proficient in Node.js, Express, and Python with Django. Able to
+                design and implement APIs, manage databases, and build secure and
+                scalable server-side applications.
+              </span>
+            </div>
+            <div class="pill-box">
+              <span class="pill-box-left" style="background: linear-gradient(330deg, #000, #000, #FF6B6B); border: 2px solid #FF6B6B">
+                SOFT SKILLS
+              </span>
+              <span class="pill-box-right">
+                Effective communicator, great team player, and a strong problem
+                solver. Comfortable working in agile development teams and
+                handling multiple tasks.
+              </span>
+            </div>
+          </div>
         </div>
-        <img src="/images/brian.jpg" alt="A photo of Brian" />
-      </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <div id="skills-section">
-          <div class="skill-category">
-            <img src="/images/frontend.jpg" alt="Frontend development image" />
-            <h3>Frontend Development</h3>
-            <p>
-              Strong knowledge in HTML, CSS, JavaScript, and frontend frameworks
-              like React. Experienced in building responsive and user-friendly
-              interfaces and improving website performance.
-            </p>
+        <div id="test2">
+          <div id="experience-container">
+            <h3>EDUCATION <br> <span>&</span></h3>
+            <h3>EXPERIENCE</h3>
           </div>
-
-          <div class="skill-category">
-            <img src="/images/backend.jpg" alt="Backend development image" />
-            <h3>Backend Development</h3>
-            <p>
-              Proficient in Node.js, Express, and Python with Django. Able to
-              design and implement APIs, manage databases, and build secure and
-              scalable server-side applications.
-            </p>
+          <div id="experience-box">
+            <div>
+              <span>2021-PRESENT</span>
+              <h3>BACHELOR IN COMPUTER ENGINEER</h3>
+              <span>UNIVERSITY OF CALIFORNIA, SAN DIEGO</span>
+            </div>
+            <div>
+              <span>2022-Present</span>
+              <h3>BETTER TIMES TUTORING</h3>
+              <span>FOUNDER & UX/UI DESIGNER</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="skill-category">
-            <img src="/images/software.jpg" alt="Software and APIs image" />
-            <h3>Software & APIs</h3>
+    <section id="projects" class="hidden">
+      <aside class="vertical-section">
+        <span class="section-number">02</span>
+        <hr>
+        <h2 class="vertical-title">PROJECTS</h2>
+      </aside>
+      <div class="content-container">
+        <div class="project">
+          <div class="project-description">
+            <span>2023</span>
+            <h3>InvoiSync</h3>
+            <span>Developer</span>
             <p>
-              Experienced in integrating various APIs, utilizing cloud
-              platforms, and working with software like Postman and Git.
+              InvoiSync is a dedicated desktop application, crafted using Electron js, tailor-made for
+              'Daniel Mendez Landscaping Inc.' This robust platform offers a comprehensive suite of features
+              to manage and create pdf copies of monthly made invoices, store crucial client data, and produce accurate
+              estimates efficiently.
             </p>
+            <a class="project-link" href="https://bettertimestutoring.com/">Case Study</a>
+            <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
           </div>
-
-          <div class="skill-category">
-            <img src="/images/softskills.jpg" alt="Soft skills image" />
-            <h3>Soft Skills</h3>
-            <p>
-              Effective communicator, great team player, and a strong problem
-              solver. Comfortable working in agile development teams and
-              handling multiple tasks and deadlines.
-            </p>
+          <div class="project-img-container">
+            <img src="/images/inviosync.png" alt="InvoiSync Logo" />
           </div>
         </div>
 
-        <table>
-          <caption>
-            Education and Work Experience
-          </caption>
-          <colgroup>
-            <col />
-          </colgroup>
-          <tr>
-            <th><b>2019</b></th>
-            <th><b>2021-2023</b></th>
-            <th><b>Present</b></th>
-          </tr>
-          <tr>
-            <td>
-              El Camino Real Charter H.S <br />
-              <em>Woodland Hills, CA</em>
-            </td>
-            <td>
-              B.S, Electrical and Computer Engineering <br />
-              <em>University of California, San Diego</em>
-            </td>
-            <td>
-              Better Times Tutoring Inc.<br />
-              <em>San Diego, CA</em>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              Tree of Knowledge Tutoring Center<br /><em>Mission Hills, CA</em>
-            </td>
-            <td></td>
-          </tr>
-        </table>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <article class="project-container">
-          <div class="project-img">
-            <picture>
-              <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
-            </picture>
-          </div>
-          <div class="project-info">
-            <h2 class="project-title">Better Times Tutoring</h2>
-            <h3>2022-Present</h3>
+        <div class="project">
+          <div class="project-description">
+            <span>2022-Present</span>
+            <h3>Better Times Tutoring</h3>
+            <span>UI/UX Designer</span>
             <p>
               A tutoring website that offers a variety of academic resources and
-              services to enhance student success and achievement.
+              services to enhance student success and achievement. We believe that the gateway
+              to effective learning starts with an impeccable user experience. Our tutoring website
+              is a testament to this belief, curated with the utmost attention to design detail, emphasizing
+              our core values of expertise, accessibility, and differentiation in the educational sector.
             </p>
-            <a class="project-link" href="https://bettertimestutoring.com/"
-              >Learn More</a
-            >
+            <a class="project-link" href="https://bettertimestutoring.com/">Case Study</a>
+            <a class="project-link" href="https://bettertimestutoring.com/">Learn More</a>
           </div>
-        </article>
-      </section>
+          <div class="project-img-container">
+            <img src="/images/logo.PNG" alt="Better Times Tutoring Logo" />
+          </div>
+        </div>
 
-      <section id="contact">
-        <form>
-          <h2>Contact Me</h2>
-          <hr>
-          <h3>
-            Interested in Collaborating or <br />
-            have general questions?
-          </h3>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /> <br />
-          <br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /> <br />
-          <br />
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
-    </main>
-
-    <hr />
-
-    <footer class="footer">
-      <div id="copyright">
-        <span>© 2023 All rights reserved </span>
-        <a>License</a>
+        <div class="project">
+          <div class="project-description">
+            <span>2022</span>
+            <h3>Frugal</h3>
+            <span>Team Leader</span>
+            <p>
+              A web-based expense tracker, to ensures your financial data stays in the right hands while providing an
+              intuitive
+              interface to manage your expenses seamlessly. Designed with both security and user experience in mind,
+              'Frugal'
+              offers a CRUD functionality allowing users to manage their financial records, a login system for varies
+              accounts,
+              data visualization to provide users with immediate insights into their spending behaviors, and search bar
+              feature
+              and expense categorization.
+            </p>
+            <a class="project-link"
+              href="https://github.com/cse110-fa22-group8/cse110-fa22-group8/tree/main">Documentation</a>
+          </div>
+          <div class="project-img-container">
+            <img src="/images/TheByte.png" alt="The Byte Logo for Frugal" />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-description">
+            <span>2023</span>
+            <h3>FEGprocessorX</h3>
+            <span>Developer</span>
+            <p>
+              A microprocessor FEC Restoration ISA, developed in Quartus and System Verilog, engineered for robust 
+              information recovery during data transmission. This system boasts a precise set of features to restore corrupted data 
+              through Forward Error Correction (FEC) methodologies, signal Double Error Detection (DED), seamlessly handling data via registers, and 
+              integrating mathematical operations essential for FEC. It's a testament to simultaneous data processing and operation execution, presenting various branches for diverse 
+              FEC data management scenarios.
+            </p>
+            <a class="project-link"
+              href="https://github.com/B1mendez/FEGprocessorx">Documentation</a>
+          </div>
+          <div class="project-img-container">
+            <img src="/images/processor.jpg" alt="Image of processor for FEGprocessorX" />
+          </div>
+        </div>
+        
+        <div class="project">
+          <div class="project-description">
+            <span>2023</span>
+            <h3>Bitcoin Hashing Model</h3>
+            <span>Developer</span>
+            <p>
+              A Bitcoin hashing model, developed in Quartus and System Verilog, utilizes the SHA-256 cryptographic hashing algorithm to securely 
+              chain blocks of bitcoin transaction data. The SHA256 algorithm converts input data of arbitrary size, called a message, into a fixed
+              output called a hash value of 256 bits in order to ensure the security of the message. The Bitcoin blockchain uses SHA -256 cryptographic 
+              hashing algorithm to chain blocks each storing digital information about financial transactions data. 
+            </p>
+            <a class="project-link"
+              href="https://github.com/B1mendez/Bitcoin-Hashing/">Documentation</a>
+          </div>
+          <div class="project-img-container">
+            <img src="/images/bitcoin.jpg" alt="The Byte Logo for Frugal" />
+          </div>
+        </div>
       </div>
-      <div id="footer-links">
-        <a href="https://www.github/b1mendez" class="fa-brands fa-github"
-          >Github</a
-        >
-        <a
-          href="https://www.linkedin.com/in/brian-mendez-2530801b0/"
-          class="fa-brands fa-linkedin"
-          >LinkedIn</a
-        >
+    </section>
+
+    <section id="contact" class="hidden">
+      <aside class="vertical-section">
+        <span class="section-number">03</span>
+        <hr>
+        <h2 class="vertical-title">CONTACT ME</h2>
+      </aside>
+      <div class="content-container">
+        <div id="contact-container">
+          <h3>GET IN TOUCH</h3>
+        </div>
+        <div id="contact-section">
+          <div id="social-section">
+            <div class="social-icon">
+              <a href="https://twitter.com/YourUsername" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.github/b1mendez" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/brianmendez0/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/in/brian-mendez-2530801b0/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div id="pills-section">
+            <div class="contact-pill">
+              <h3>BRIANMENDEZ.DEV@GMAIL.COM</h3>
+            </div>
+            <div class="contact-pill">
+              <h3>818 271 6620</h3>
+            </div>
+            <div class="contact-pill">
+              <h3>BASED IN CALIFORNIA</h3>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div id="copyright">
+      <span>Created by Brian Mendez</span>
+      <a>© 2023</a>
+    </div>
+  </footer>
+</body>
+
 </html>
