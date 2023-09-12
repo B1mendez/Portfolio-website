@@ -11,38 +11,41 @@ html {
 #global-header {
   font-family: 'Josefin Sans', sans-serif;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex;
+  justify-content: space-between; */
+  text-align: center;
   background-color: #000;
+  align-items: center;
 }
 
-#global-header img {
+#global-header nav img {
   max-width: 5%;
-  /* Maximum width, adjust this value if needed */
   max-height: 100%;
-  /* Maximum height */
+  
 }
 
 #global-header h1 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 8px;
   font-weight: 100;
-  float: left;
   color: #fff;
-  padding-left: 1.5rem;
   visibility: hidden;
   animation: headerAppear 2s forwards 1.5s;
   z-index: 100;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 3%;
 }
 
 #global-header nav {
   display: flex;
-  padding-right: 1.5rem;
+  justify-content: space-between;
   visibility: hidden;
   animation: headerAppear 2s forwards 1.5s;
-  z-index: 100;
-
+  z-index: 100;  
+  align-items: center;
 }
 
 @keyframes headerAppear {
@@ -62,7 +65,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  float: right;
+  display: flex;
 }
 
 #global-header li {
@@ -81,6 +84,7 @@ html {
 #global-header li a:hover {
   background-color: grey;
 }
+
 
 .home {
   display: flex;
