@@ -228,6 +228,7 @@ body::-webkit-scrollbar-thumb {
   }
   to {
     opacity: 0;
+    display: none;
   }
 }
 
