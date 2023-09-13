@@ -807,6 +807,10 @@ body::-webkit-scrollbar-thumb {
 
 
 @media (width < 600px) {
+  body {
+    overflow-y: hidden;
+  }
+  
   #global-header h1 {
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 6px;
@@ -820,6 +824,7 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     transform: translate(-50%, -50%);
     top: 3%;
+    font-size: 1.5rem;
   }
 
   #global-header nav img {
@@ -843,7 +848,11 @@ body::-webkit-scrollbar-thumb {
   }
 
   .content:nth-child(1) {
-    margin-bottom: 40vh;
+    margin-bottom: 80vh;
+  }
+  
+  .content:nth-child(2) {
+    max-height: 65vh;
   }
 
   #introduction-container {
@@ -854,14 +863,14 @@ body::-webkit-scrollbar-thumb {
   }
 
   #introduction-container h3 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     color: #fff;
-    font-size: 4vw;
+    font-size: 30px;
     letter-spacing: 5px;
   }
 
   #introduction-container h4 {
-    margin: 1rem 0;
+    margin: .5rem 0;
     color: #007BFF;
     font-weight: 500;
   }
@@ -869,26 +878,25 @@ body::-webkit-scrollbar-thumb {
   #introduction-container p {
     line-height: 1.6;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .pill-container {
     flex-basis: 0%;
     padding: 0.3rem;
-    display: flex;
-    justify-content: space-between;
+    display: block;
     gap: 20px;
-    flex-direction: column;
   }
 
   .pill-box {
     border-radius: 2rem;
     position: relative;
     height: auto;
-    min-height: 6.7rem;
-    display: grid;
+    min-height: 3.7rem;
+    display: block;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+    margin-bottom: 5vh;
   }
   
   .pill-box-left {
@@ -896,11 +904,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 2.5rem;
     position: relative;
     height: auto;
-    min-height: 9rem;
+    max-height: 4rem;
     padding: 0.5rem;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3vw;
+    font-size: 7vw;
     font-weight: 400;
     color: #fff;
     display: flex;
@@ -922,6 +930,37 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
   }
 
+  #experience-container {
+    flex-basis: 35%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    margin-bottom: 5vh;
+  }
+
+  #experience-container h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  #experience-box {
+    text-align: center;
+  }
+
+  #experience-box div {
+    margin: 2rem 0;
+  }
+
+  #experience-box h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 5px;
+  }
+  
+  #experience-box span {
+    font-size: 12px;
+    display: block;
+  }
   .project {
     display: block;
     height: 100vh;
@@ -934,6 +973,15 @@ body::-webkit-scrollbar-thumb {
     padding: 0.5rem;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  .project-description h3 {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+
+  .project-description span {
+    font-size: 14px;
   }
 
   .project-description p {
@@ -954,10 +1002,10 @@ body::-webkit-scrollbar-thumb {
     max-width: 70%;
   }
 
-
   #contact-section {
     display: block;
     margin-bottom: 10vh;
+    width: 100%;
   }
 
   #social-section {
@@ -965,27 +1013,32 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 15px;
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
   }
 
   .contact-pill {
-    padding: 1.0rem 1.0rem;
+    padding: .75rem .75rem;
     border-radius: 2.5rem;
     position: relative;
     height: 1.5rem;
     background: linear-gradient(330deg, #000, #000, #C08261);
     border: 2px solid #C08261;
-    max-width: 800%;
+    max-width: 72%;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
-    letter-spacing: 5px;
-    font-size: 1.0rem;
+    text-transform: uppercase;
+  }
+
+  .contact-pill h3 {
+    font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
+    word-wrap: break-word;
+
   }
 
 }
