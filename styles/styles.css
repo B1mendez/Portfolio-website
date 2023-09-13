@@ -77,6 +77,9 @@ body::-webkit-scrollbar-thumb {
   z-index: 100;
   align-items: center;
 }
+#hamburger-btn {
+  display: none;
+}
 
 @keyframes headerAppear {
   0% {
@@ -872,12 +875,53 @@ body::-webkit-scrollbar-thumb {
   }
 
   .pill-container {
-    flex-basis: 60%;
+    flex-basis: 0%;
     padding: 0.3rem;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-direction: column;
+  }
+
+  .pill-box {
+    border-radius: 2rem;
+    position: relative;
+    height: auto;
+    min-height: 6.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .pill-box-left {
+    padding: 1.3rem 1.5rem;
+    border-radius: 2.5rem;
+    position: relative;
+    height: auto;
+    min-height: 9rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pill-box-right {
+    border-left: 0;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
   }
 
   .project {
@@ -933,17 +977,16 @@ body::-webkit-scrollbar-thumb {
     padding: 1.0rem 1.0rem;
     border-radius: 2.5rem;
     position: relative;
-    height: auto;
-    min-height: 2rem;
+    height: 1.5rem;
     background: linear-gradient(330deg, #000, #000, #C08261);
     border: 2px solid #C08261;
-    max-width: 100%;
+    max-width: 800%;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     letter-spacing: 5px;
     font-size: 1.0rem;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
   }
 
