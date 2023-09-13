@@ -843,16 +843,15 @@ body::-webkit-scrollbar-thumb {
     /* Show hamburger button on mobile */
   }
 
-  .content {
-    display: block;
+  .content-container {
+    width: 100%;
+    overflow-x: hidden;
   }
 
-  .content:nth-child(1) {
-    margin-bottom: 80vh;
-  }
-  
-  .content:nth-child(2) {
-    max-height: 65vh;
+  .content {
+    display: block;
+    height: auto;
+    margin-bottom: 10vh;
   }
 
   #introduction-container {
@@ -1013,7 +1012,7 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 15px;
-    width: 80%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
@@ -1026,7 +1025,7 @@ body::-webkit-scrollbar-thumb {
     height: 1.5rem;
     background: linear-gradient(330deg, #000, #000, #C08261);
     border: 2px solid #C08261;
-    max-width: 72%;
+    max-width: 100%;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
