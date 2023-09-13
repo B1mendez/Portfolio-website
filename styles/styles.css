@@ -149,10 +149,8 @@ body::-webkit-scrollbar-thumb {
 #loading-screen {
   position: fixed;
   width: 60vw;
-  /* Adjust as necessary */
   height: auto;
-  /* Maintain the SVG's aspect ratio */
-  top: 40%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: disappear 0.5s ease forwards 3.5s;
