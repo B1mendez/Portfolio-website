@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.15,
+      threshold: 0.10,
     }
   );
 
@@ -27,5 +27,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // After the animation ends, set display to none
     main.style.opacity = "1";
     header.style.opacity = "1";
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById("hamburger-btn").addEventListener("click", function() {
+      const navLinks = document.getElementById("nav-links");
+      if (navLinks.style.display === "none" || navLinks.style.display === "") {
+          navLinks.style.display = "block";
+      } else {
+          navLinks.style.display = "none";
+      }
   });
 });

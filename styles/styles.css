@@ -11,36 +11,38 @@ html {
 /* This ensures the body always has the space reserved for a scrollbar */
 body {
   overflow: hidden;
-  scrollbar-width: thin; 
+  scrollbar-width: thin;
   scrollbar-color: rgba(97, 97, 97, 0.5) transparent;
   animation: scrollAppear 0.5s ease forwards 3.7s;
 }
 
 /* For Chrome, Safari */
 body::-webkit-scrollbar {
-  width: 12px; /* Adjust width to your preference */
+  width: 12px;
+  /* Adjust width to your preference */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(97, 97, 97, 0.5); /* Adjust color to your preference */
+  background-color: rgba(97, 97, 97, 0.5);
+  /* Adjust color to your preference */
 }
 
-@keyframes scrollAppear{
+@keyframes scrollAppear {
   to {
     overflow: visible;
   }
 }
 
-#global-header, #main-content {
+#global-header,
+#main-content {
   opacity: 0;
-  transition: opacity 0.5s ease; /* Adjust the duration as per your preference */
+  transition: opacity 0.5s ease;
+  /* Adjust the duration as per your preference */
 }
 
 #global-header {
   font-family: 'Josefin Sans', sans-serif;
   width: 100%;
-  /* display: flex;
-  justify-content: space-between; */
   text-align: center;
   align-items: center;
   opacity: 0;
@@ -49,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 #global-header nav img {
   max-width: 5%;
   max-height: 100%;
-  
+
 }
 
 #global-header h1 {
@@ -72,7 +74,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   visibility: hidden;
   animation: headerAppear 2s forwards 3.7s;
-  z-index: 100;  
+  z-index: 100;
   align-items: center;
 }
 
@@ -88,7 +90,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-#global-header ul {
+#nav-links {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -143,8 +145,10 @@ body::-webkit-scrollbar-thumb {
 
 #loading-screen {
   position: fixed;
-  width: 60vw; /* Adjust as necessary */
-  height: auto; /* Maintain the SVG's aspect ratio */
+  width: 60vw;
+  /* Adjust as necessary */
+  height: auto;
+  /* Maintain the SVG's aspect ratio */
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -152,80 +156,91 @@ body::-webkit-scrollbar-thumb {
   z-index: 1000;
 }
 
-#loading-screen path:nth-child(2){
+#loading-screen path:nth-child(2) {
   stroke-dasharray: 646;
   stroke-dashoffset: 646;
   animation: lin-animation 2s ease forwards;
-} 
-#loading-screen path:nth-child(3){
+}
+
+#loading-screen path:nth-child(3) {
   stroke-dasharray: 651;
   stroke-dashoffset: 651;
   animation: lin-animation 2s ease forwards 0.3s;
 
 }
-#loading-screen path:nth-child(4){
+
+#loading-screen path:nth-child(4) {
   stroke-dasharray: 402;
   stroke-dashoffset: 402;
   animation: lin-animation 2s ease forwards 0.6s;
 }
-#loading-screen path:nth-child(5){
+
+#loading-screen path:nth-child(5) {
   stroke-dasharray: 1022px;
   stroke-dashoffset: 1022px;
   animation: lin-animation 2s ease forwards 0.9s;
 
 }
-#loading-screen path:nth-child(6){
+
+#loading-screen path:nth-child(6) {
   stroke-dasharray: 886px;
   stroke-dashoffset: 886px;
   animation: lin-animation 2s ease forwards 1.2s;
 
-} 
-#loading-screen path:nth-child(7){
+}
+
+#loading-screen path:nth-child(7) {
   stroke-dasharray: 1027px;
   stroke-dashoffset: 1027px;
   animation: lin-animation 2s ease forwards 1.5s;
 
 }
-#loading-screen path:nth-child(8){
+
+#loading-screen path:nth-child(8) {
   stroke-dasharray: 767px;
   stroke-dashoffset: 767px;
   animation: lin-animation 2s ease forwards 0.3s;
 
 }
-#loading-screen path:nth-child(9){
+
+#loading-screen path:nth-child(9) {
   stroke-dasharray: 885px;
   stroke-dashoffset: 885px;
   animation: lin-animation 2s ease forwards 0.6s;
 
 }
-#loading-screen path:nth-child(10){
+
+#loading-screen path:nth-child(10) {
   stroke-dasharray: 716px;
   stroke-dashoffset: 716px;
   animation: lin-animation 2s ease forwards 0.9s;
 
 }
-#loading-screen path:nth-child(11){
+
+#loading-screen path:nth-child(11) {
   stroke-dasharray: 769px;
   stroke-dashoffset: 769px;
   animation: lin-animation 2s ease forwards 1.2s;
 
 }
-#loading-screen path:nth-child(12){
+
+#loading-screen path:nth-child(12) {
   stroke-dasharray: 786px;
   stroke-dashoffset: 786px;
   animation: lin-animation 2s ease forwards 1.5s;
-}  
+}
 
 @keyframes lin-animation {
-  to{
+  to {
     stroke-dashoffset: 0px;
   }
 }
 
 @keyframes disappear {
-  from{
+  from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     display: none;
@@ -477,19 +492,11 @@ body::-webkit-scrollbar-thumb {
   /* Add smooth transition */
 }
 
-#test1 {
+.content {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: space-between;
-}
-
-#test2 {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: space-between;
-  opacity: 1;
 }
 
 #introduction-container {
@@ -692,7 +699,7 @@ body::-webkit-scrollbar-thumb {
 
 #contact-section {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
 
 }
 
@@ -709,8 +716,10 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;  /* Adjust this value if needed */
-  font-size: 2rem; /* Adjust this value if needed */
+  height: auto;
+  /* Adjust this value if needed */
+  font-size: 2rem;
+  /* Adjust this value if needed */
   color: white;
 }
 
@@ -719,15 +728,16 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: inherit;  
+  color: inherit;
   width: 100%;
   height: 100%;
   font-size: 50px;
 }
 
-.social-icon a:hover, .social-icon a:focus {
-    color: inherit; 
-    opacity: 0.8;
+.social-icon a:hover,
+.social-icon a:focus {
+  color: inherit;
+  opacity: 0.8;
 
 }
 
@@ -757,24 +767,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer {
-  display: flex; /* Change this from block to flex */
-  justify-content: space-between; /* This will space the child elements between the left and right extremes */
+  display: flex;
+  /* Change this from block to flex */
+  justify-content: space-between;
+  /* This will space the child elements between the left and right extremes */
   background-color: #000;
   padding: 20px 20px;
 }
 
 #copyright {
-  display: flex; /* Make this a flex container to handle its children's layout */
-  justify-content: space-between; /* Space the child elements (span and a) between the left and right extremes */
-  width: 100%; /* Ensure this container spans the full width of its parent */
+  display: flex;
+  /* Make this a flex container to handle its children's layout */
+  justify-content: space-between;
+  /* Space the child elements (span and a) between the left and right extremes */
+  width: 100%;
+  /* Ensure this container spans the full width of its parent */
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   font-size: 1.0rem;
   font-weight: 400;
 }
 
-#copyright > a, #copyright > span {
-  margin: 0 4px; /* Giving equal margins for both the span and the a for consistency */
+#copyright>a,
+#copyright>span {
+  margin: 0 4px;
+  /* Giving equal margins for both the span and the a for consistency */
 }
 
 .hidden {
@@ -786,75 +803,148 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
-@media (width >=1024px) {
-  .footer {
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 20px 20px;
-  }
-}
 
-@media (width < 1024px) {
-  #skills-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 200px;
-  }
-
-  .contact {
-    height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .contact form {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  .contact input[type="text"] {
-    font-size: pxtoem(14, 16);
-  }
-
-  .project-container {
-    flex-direction: column;
-  }
-
-  .project-info {
-    padding: 2.5rem;
-  }
-
-  .project-link {
-    margin-top: 1.5rem;
-  }
-
-  .footer {
-    flex-direction: column-reverse;
-    gap: 16px;
-  }
-
-  #footer-links {
-    font-size: 24px;
-  }
-}
 
 @media (width < 600px) {
-  #skills-section {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 200px;
+  #global-header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+    color: #fff;
+    visibility: hidden;
+    animation: headerAppear 2s forwards 3.7s;
+    z-index: 100;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 3%;
   }
 
-  .footer {
-    text-align: center;
-    align-items: center;
+  #global-header nav img {
+    max-width: 15%;
+    max-height: 100%;
   }
 
-  #copyright>span {
+  #nav-links {
+    display: none;
+    /* Hide navigation links on mobile */
+  }
+
+  #hamburger-btn {
     display: block;
-    margin-right: 0;
-    margin-bottom: 2px;
+    width: 55px;
+    /* Show hamburger button on mobile */
   }
+
+  .content {
+    display: block;
+  }
+
+  .content:nth-child(1) {
+    margin-bottom: 40vh;
+  }
+
+  #introduction-container {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  #introduction-container h3 {
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 4vw;
+    letter-spacing: 5px;
+  }
+
+  #introduction-container h4 {
+    margin: 1rem 0;
+    color: #007BFF;
+    font-weight: 500;
+  }
+
+  #introduction-container p {
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .pill-container {
+    flex-basis: 60%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .project {
+    display: block;
+    height: 100vh;
+  }
+
+  .project-description {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    flex-basis: 60%;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .project-description p {
+    margin: 2rem 0;
+    padding-right: 0;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1.0rem;
+    text-transform: none;
+    text-align: left;
+  }
+
+  .project-img-container {
+    text-align: center;
+  }
+
+  .project-img-container img {
+    max-width: 70%;
+  }
+
+
+  #contact-section {
+    display: block;
+    margin-bottom: 10vh;
+  }
+
+  #social-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+
+  .contact-pill {
+    padding: 1.0rem 1.0rem;
+    border-radius: 2.5rem;
+    position: relative;
+    height: auto;
+    min-height: 2rem;
+    background: linear-gradient(330deg, #000, #000, #C08261);
+    border: 2px solid #C08261;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 1.0rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
 }
