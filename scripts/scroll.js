@@ -16,29 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
-
-
-  // var leftHeading = document.getElementById('contact-heading-left');
-  // var rightHeading = document.getElementById('contact-heading-right');
-
-  // window.addEventListener('scroll', function () {
-  //   var s = window.scrollY,
-  //     d = document.documentElement.scrollHeight,
-  //     c = window.innerHeight;
-
-  //   var scrollPercent = (s*2) / (d - c);
-
-  //   // Calculate translation based on scroll percentage
-  //   // You can adjust the multiplier for a stronger/weaker effect
-  //   var leftTranslation = scrollPercent * -100;   // Negative to move to the left
-  //   var rightTranslation = scrollPercent * 100;  // Positive to move to the right
-
-  //   console.log(leftTranslation);
-  //   console.log(rightTranslation);
-  //   // Update the transform property
-  //   leftHeading.style.transform = `translateX(${Math.min(leftTranslation, -86)}%)`;
-  //   rightHeading.style.transform = `translateX(${Math.max(rightTranslation, 86)}%)`;
-    
-  // });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const loadingScreen = document.getElementById("loading-screen");
+  const header = document.getElementById("global-header");
+  const main = document.getElementById("main-content");
+
+  loadingScreen.addEventListener("animationend", function() {
+    // After the animation ends, set display to none
+    main.style.opacity = "1";
+    header.style.opacity = "1";
+  });
+});
