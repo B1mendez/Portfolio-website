@@ -27,6 +27,15 @@ body::-webkit-scrollbar-thumb {
   /* Adjust color to your preference */
 }
 
+.no-script-message {
+  background-color: #ffcccb;
+  color: #a40000;
+  padding: 10px;
+  border: 1px solid #a40000;
+  margin: 20px 0;
+  text-align: center;
+}
+
 @keyframes scrollAppear {
   to {
     overflow: visible;
@@ -809,6 +818,11 @@ body::-webkit-scrollbar-thumb {
 @media (width < 600px) {
   body {
     overflow-x: hidden;
+  }
+
+  #about, #projects, #contact {
+    gap: 30px;
+    align-items: baseline;
   }
 
   #global-header h1 {

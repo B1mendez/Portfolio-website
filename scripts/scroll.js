@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   document.getElementById("hamburger-btn").addEventListener("click", function() {
       const navLinks = document.getElementById("nav-links");
       if (navLinks.style.display === "none" || navLinks.style.display === "") {
-          navLinks.style.display = "block";
+          navLinks.style.display = "flex";
       } else {
           navLinks.style.display = "none";
       }
