@@ -872,6 +872,16 @@ body::-webkit-scrollbar-thumb {
     /* Show hamburger button on mobile */
   }
 
+  .vertical-title {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
   .content-container {
     width: 100%;
     overflow-x: hidden;
@@ -991,7 +1001,8 @@ body::-webkit-scrollbar-thumb {
   }
   .project {
     display: block;
-    height: 100vh;
+    height: auto;
+    margin-bottom: 10vh;
   }
 
   .project-description {
