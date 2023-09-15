@@ -27,6 +27,10 @@ body::-webkit-scrollbar-thumb {
   /* Adjust color to your preference */
 }
 
+#loading-wrapper {
+  display: none;
+}
+
 .no-script-message {
   background-color: #ffcccb;
   color: #a40000;
@@ -69,7 +73,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 100;
   color: #fff;
   visibility: hidden;
-  animation: headerAppear 2s forwards 3.7s;
+  animation: headerAppear 2s forwards 3.8s;
   z-index: 100;
   margin-top: 10px;
   position: absolute;
@@ -82,7 +86,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   visibility: hidden;
-  animation: headerAppear 2s forwards 3.7s;
+  animation: headerAppear 2s forwards 3.8s;
   z-index: 100;
   align-items: center;
 }
@@ -146,7 +150,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   opacity: 0;
   visibility: hidden;
-  animation: fadeIn 2s forwards 3.7s;
+  animation: fadeIn 2s forwards 3.8s;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -276,7 +280,7 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: fadeIn 2s forwards 4.3s;
+  animation: fadeIn 2s forwards 4s;
 }
 
 @keyframes fadeIn {
@@ -337,27 +341,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 #img1 {
-  animation: floatim1 2s forwards 4.3s;
+  animation: floatim1 2s forwards 4s;
 }
 
 #img2 {
-  animation: floatim2 2s forwards 4.3s;
+  animation: floatim2 2s forwards 4s;
 }
 
 #img3 {
-  animation: floatim3 2s forwards 4.3s;
+  animation: floatim3 2s forwards 4s;
 }
 
 #img4 {
-  animation: floatim4 2s forwards 4.3s;
+  animation: floatim4 2s forwards 4s;
 }
 
 #img5 {
-  animation: floatim5 2s forwards 4.3s;
+  animation: floatim5 2s forwards 4s;
 }
 
 #img6 {
-  animation: floatim6 2s forwards 4.3s;
+  animation: floatim6 2s forwards 4s;
 }
 
 @-webkit-keyframes floatim1 {
