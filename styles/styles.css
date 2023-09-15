@@ -90,6 +90,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 100;
   align-items: center;
 }
+
 #hamburger-btn {
   display: none;
 }
@@ -119,12 +120,32 @@ body::-webkit-scrollbar-thumb {
   float: left;
 }
 
+
 #global-header li a {
   display: block;
   color: #FFF;
   text-align: center;
   padding: 12px 12px;
   text-decoration: none;
+}
+
+#global-header li:last-child a {
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+#global-header li:last-child a:hover {
+  background-color: black;
+  color: white;
 }
 
 #global-header li a:hover {
