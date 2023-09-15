@@ -43,16 +43,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-// // Check if the page has been loaded in this session
-// if (sessionStorage.getItem('pageLoadedInSession')) {
-//   // Hide the loader immediately
-//   document.getElementById('loading-screen').style.display = 'none';
-// } else {
-//   // Mark that the page has been loaded in this session
-//   sessionStorage.setItem('pageLoadedInSession', true);
-  
-//   // Display your loader for the duration required and then hide
-//   setTimeout(() => {
-//       document.getElementById('loading-screen').style.display = 'none';
-//   }, 3000); // e.g., hide after 3 seconds
-// }
