@@ -382,8 +382,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   100% {
-    left: 73%;
-    top: 8%;
+    left: 92%;
+    top: 25%;
     opacity: 0.5;
   }
 }
@@ -424,8 +424,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   100% {
-    left: 92%;
-    top: 25%;
+    left: 20%;
+    top: 15%;
     opacity: 0.4;
   }
 }
