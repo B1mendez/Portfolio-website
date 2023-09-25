@@ -804,8 +804,8 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   height: auto;
   min-height: 2rem;
-  background: linear-gradient(330deg, #000, #000, #C08261);
-  border: 2px solid #C08261;
+  background: linear-gradient(330deg, #000, #000, #59CE8F);
+  border: 2px solid #59CE8F;
   max-width: 100%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -852,8 +852,6 @@ body::-webkit-scrollbar-thumb {
 .show {
   opacity: 1;
 }
-
-
 
 @media (width < 600px) {
   body {
