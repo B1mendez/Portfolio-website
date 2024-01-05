@@ -6,6 +6,17 @@
   font-style: normal;
 }
 
+:root {
+  --background-color: #000;
+  --font-color: #fff;
+}
+
+.subpage {
+  --background-color: #fff;
+  --font-color: #000;
+  --grey-color: grey; 
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +24,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 /* This ensures the body always has the space reserved for a scrollbar */
@@ -22,12 +33,14 @@ body {
   scrollbar-width: thin;
   scrollbar-color: rgba(97, 97, 97, 0.5) transparent;
   animation: scrollAppear 0.5s ease forwards 3.7s;
+  background-color: var(--background-color);
 }
 
 /* For Chrome, Safari */
 body::-webkit-scrollbar {
   width: 12px;
   /* Adjust width to your preference */
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -493,6 +506,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+  text-transform: uppercase;
 }
 
 .section-number {
@@ -519,7 +533,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
 }
 
-.content-container > div {
+.content-container>div {
   transition: opacity 0.5s;
   /* Add smooth transition */
 }
@@ -829,7 +843,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
 }
 
-#copyright > span {
+#copyright>span {
   margin: 0 4px;
   /* Giving equal margins for both the span and the a for consistency */
 }
@@ -842,6 +856,7 @@ body::-webkit-scrollbar-thumb {
 .show {
   opacity: 1;
 }
+
 .responsive-break {
   display: none;
 }
@@ -850,6 +865,7 @@ body::-webkit-scrollbar-thumb {
   .responsive-break {
     display: inline;
   }
+
   #global-header h1 {
     font-size: 2vw;
   }
@@ -879,9 +895,9 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     top: 0;
     margin-bottom: 5vh;
-}
+  }
 
-.vertical-title {
+  .vertical-title {
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: 5px;
     font-size: 12px;
@@ -889,26 +905,27 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     writing-mode: horizontal-tb;
     transform: none;
-}
+    text-transform: uppercase;
+  }
 
-.section-number {
+  .section-number {
     font-family: "Old Standard TT", serif;
     letter-spacing: 5px;
     font-size: 4vw;
     font-weight: 500;
     color: #fff;
     margin-bottom: 10px;
-}
+  }
 
-.vertical-section hr {
+  .vertical-section hr {
     color: #fff;
     border: none;
-    width: 100px; 
+    width: 100px;
     background-color: #fff;
-    height: 1px;  
+    height: 1px;
     margin-bottom: 10px;
-    transform: none;  
-}
+    transform: none;
+  }
 
   #global-header h1 {
     font-family: "Josefin Sans", sans-serif;
@@ -1151,4 +1168,74 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: inherit;
   }
+}
+
+/* InvoiSync Case Study */
+#overview {
+  margin-inline: auto;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 50px;
+  width: 100%; 
+}
+
+#overview-container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+#overview-header {
+  flex-basis: 40%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.15rem;
+  margin-right: 50px;
+}
+
+#overview-header h1, #overview-header h2 {
+  text-transform: uppercase;
+  color: grey;
+  letter-spacing: 8px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#project-name {
+  font-weight: bold;
+  font-size: 3.0rem;
+  margin-bottom: 2rem;
+}
+
+#overview-header p, #overview-header ul {
+  margin-bottom: 2rem;
+}
+
+#overview-header ul {
+  list-style-type: none;
+}
+
+#overview-header ul li {
+  margin-bottom: 8px;
+}
+
+#overview-description {
+  flex-basis: 50%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+  letter-spacing: normal;
+}
+
+#overview-description p {
+  margin-bottom: 40px;
+  line-height: 1.45rem;
 }
