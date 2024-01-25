@@ -14,7 +14,7 @@
 .subpage {
   --background-color: #fff;
   --font-color: #000;
-  --grey-color: grey; 
+  --grey-color: grey;
 }
 
 * {
@@ -40,7 +40,6 @@ body {
 body::-webkit-scrollbar {
   width: 12px;
   /* Adjust width to your preference */
-
 }
 
 body::-webkit-scrollbar-thumb {
@@ -503,7 +502,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 5px;
   font-size: 1.5vw;
   font-weight: 500;
-  color: #fff;
+  color: var(--font-color);
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-transform: uppercase;
@@ -514,15 +513,15 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 5px;
   font-size: 4vw;
   font-weight: 500;
-  color: #fff;
+  color: var(--font-color);
   margin-bottom: 10px;
 }
 
 .vertical-section hr {
-  color: #fff;
+  color: var(--font-color);
   border: none;
   height: 100px;
-  background-color: #fff;
+  background-color: var(--font-color);
   width: 1px;
   margin-bottom: 10px;
 }
@@ -533,7 +532,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
 }
 
-.content-container>div {
+.content-container > div {
   transition: opacity 0.5s;
   /* Add smooth transition */
 }
@@ -671,7 +670,7 @@ body::-webkit-scrollbar-thumb {
 
 #projects {
   margin-inline: auto;
-  background-color: #000;
+  background-color: var(--background-color);
   display: flex;
   gap: 50px;
   align-items: baseline;
@@ -690,11 +689,12 @@ body::-webkit-scrollbar-thumb {
 
 .project-img-container img {
   max-width: 100%;
+  min-width: 70%;
 }
 
 .project-description {
   font-family: "Josefin Sans", sans-serif;
-  color: #fff;
+  color: var(--font-color);
   flex-basis: 60%;
   padding: 0.5rem;
   text-transform: uppercase;
@@ -843,7 +843,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
 }
 
-#copyright>span {
+#copyright > span {
   margin: 0 4px;
   /* Giving equal margins for both the span and the a for consistency */
 }
@@ -902,7 +902,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 5px;
     font-size: 12px;
     font-weight: 500;
-    color: #fff;
+    color: var(--font-color);
     writing-mode: horizontal-tb;
     transform: none;
     text-transform: uppercase;
@@ -913,15 +913,15 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 5px;
     font-size: 4vw;
     font-weight: 500;
-    color: #fff;
+    color: var(--font-color);
     margin-bottom: 10px;
   }
 
   .vertical-section hr {
-    color: #fff;
+    color: var(--font-color);
     border: none;
     width: 100px;
-    background-color: #fff;
+    background-color: var(--font-color);
     height: 1px;
     margin-bottom: 10px;
     transform: none;
@@ -931,7 +931,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: 6px;
     font-weight: 100;
-    color: #fff;
+    color: var(--font-color);
     visibility: hidden;
     animation: headerAppear 2s forwards 3.7s;
     z-index: 100;
@@ -1176,7 +1176,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--background-color);
   display: flex;
   gap: 50px;
-  width: 100%; 
+  width: 100%;
 }
 
 #overview-container {
@@ -1195,7 +1195,8 @@ body::-webkit-scrollbar-thumb {
   margin-right: 50px;
 }
 
-#overview-header h1, #overview-header h2 {
+#overview-header h1,
+#overview-header h2 {
   text-transform: uppercase;
   color: grey;
   letter-spacing: 8px;
@@ -1207,11 +1208,12 @@ body::-webkit-scrollbar-thumb {
 
 #project-name {
   font-weight: bold;
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
-#overview-header p, #overview-header ul {
+#overview-header p,
+#overview-header ul {
   margin-bottom: 2rem;
 }
 
@@ -1226,7 +1228,6 @@ body::-webkit-scrollbar-thumb {
 #overview-description {
   flex-basis: 50%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   color: var(--font-color);
   margin: 20px auto;
   font-size: 1.2rem;
@@ -1238,4 +1239,22 @@ body::-webkit-scrollbar-thumb {
 #overview-description p {
   margin-bottom: 40px;
   line-height: 1.45rem;
+}
+
+#purpose {
+  margin-inline: auto;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+#showcase img {
+  display: block;
+  margin: 4rem auto;
+  max-width: 70%;
+}
+
+#lightvsdarkimg {
+  margin: 0 auto;
 }
