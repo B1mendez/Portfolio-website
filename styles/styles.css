@@ -532,7 +532,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
 }
 
-.content-container > div {
+.content-container>div {
   transition: opacity 0.5s;
   /* Add smooth transition */
 }
@@ -829,7 +829,7 @@ body::-webkit-scrollbar-thumb {
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #000;
+  background-color: var(--background-color);
   padding: 20px 20px;
 }
 
@@ -838,12 +838,13 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
-  color: #fff;
+  color: var(--font-color);
   font-size: 1rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
-#copyright > span {
+#copyright>span {
   margin: 0 4px;
   /* Giving equal margins for both the span and the a for consistency */
 }
@@ -1257,4 +1258,62 @@ body::-webkit-scrollbar-thumb {
 
 #lightvsdarkimg {
   margin: 0 auto;
+}
+
+#explanation {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.wrapper-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "Josefin Sans", sans-serif;
+  gap: 60px;
+}
+
+.explanation-title {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.col-4 {
+  flex-basis: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.sq-container {
+  background-color: gainsboro;
+  border-radius: 3rem;
+  display: flex;
+  height: 300px;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.sq-container h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;  
+  color: var(--font-color);
+  font-size: 2.15rem;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.sq-container p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  margin: 30px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
 }
