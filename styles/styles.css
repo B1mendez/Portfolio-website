@@ -1242,14 +1242,6 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.45rem;
 }
 
-#purpose {
-  margin-inline: auto;
-  background-color: var(--background-color);
-  display: flex;
-  gap: 20px;
-  align-items: baseline;
-}
-
 #showcase img {
   display: block;
   margin: 4rem auto;
@@ -1263,7 +1255,7 @@ body::-webkit-scrollbar-thumb {
 #explanation {
   width: 100%;
   max-width: 1680px;
-  margin: 0 auto;
+  margin: 125px auto;
 }
 
 .wrapper-1 {
@@ -1288,7 +1280,7 @@ body::-webkit-scrollbar-thumb {
   flex-basis: 65%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .sq-container {
@@ -1304,12 +1296,72 @@ body::-webkit-scrollbar-thumb {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;  
   color: var(--font-color);
-  font-size: 2.15rem;
+  font-size: 2.55rem;
   margin-right: 50px;
   text-align: center;
 }
 
 .sq-container p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  margin: 30px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.sq-container i {
+  width: 100%;
+  color: #283f43;
+  font-size: 85px;
+}
+
+#challenges {
+  max-width: 1480px;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+#challenges h3 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+#challenges ol li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.15rem;
+  margin-right: 50px;
+}
+
+#outcome {
+  max-width: 1480px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+#outcome h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+#outcome p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--font-color);
   margin: 30px auto;
