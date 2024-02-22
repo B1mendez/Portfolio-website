@@ -14,7 +14,7 @@
 .subpage {
   --background-color: #fff;
   --font-color: #000;
-  --grey-color: grey; 
+  --grey-color: grey;
 }
 
 * {
@@ -24,28 +24,26 @@
 
 html {
   scroll-behavior: smooth;
-  /* background-color: #000; */
 }
 
-/* This ensures the body always has the space reserved for a scrollbar */
 body {
-  overflow: hidden;
   scrollbar-width: thin;
   scrollbar-color: rgba(97, 97, 97, 0.5) transparent;
-  animation: scrollAppear 0.5s ease forwards 3.7s;
   background-color: var(--background-color);
 }
+
+#index-body {
+  overflow: hidden;
+  animation: scrollAppear 0.5s ease forwards 3.7s;
+} 
 
 /* For Chrome, Safari */
 body::-webkit-scrollbar {
   width: 12px;
-  /* Adjust width to your preference */
-
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgba(97, 97, 97, 0.5);
-  /* Adjust color to your preference */
 }
 
 #loading-wrapper {
@@ -70,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 #global-header,
 #main-content {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 5s ease;
 }
 
 #global-header {
@@ -503,7 +501,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 5px;
   font-size: 1.5vw;
   font-weight: 500;
-  color: #fff;
+  color: var(--font-color);
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-transform: uppercase;
@@ -514,15 +512,15 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 5px;
   font-size: 4vw;
   font-weight: 500;
-  color: #fff;
+  color: var(--font-color);
   margin-bottom: 10px;
 }
 
 .vertical-section hr {
-  color: #fff;
+  color: var(--font-color);
   border: none;
   height: 100px;
-  background-color: #fff;
+  background-color: var(--font-color);
   width: 1px;
   margin-bottom: 10px;
 }
@@ -671,7 +669,7 @@ body::-webkit-scrollbar-thumb {
 
 #projects {
   margin-inline: auto;
-  background-color: #000;
+  background-color: var(--background-color);
   display: flex;
   gap: 50px;
   align-items: baseline;
@@ -690,11 +688,12 @@ body::-webkit-scrollbar-thumb {
 
 .project-img-container img {
   max-width: 100%;
+  min-width: 70%;
 }
 
 .project-description {
   font-family: "Josefin Sans", sans-serif;
-  color: #fff;
+  color: var(--font-color);
   flex-basis: 60%;
   padding: 0.5rem;
   text-transform: uppercase;
@@ -829,7 +828,7 @@ body::-webkit-scrollbar-thumb {
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #000;
+  background-color: var(--background-color);
   padding: 20px 20px;
 }
 
@@ -838,9 +837,10 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
-  color: #fff;
+  color: var(--font-color);
   font-size: 1rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 #copyright>span {
@@ -902,7 +902,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 5px;
     font-size: 12px;
     font-weight: 500;
-    color: #fff;
+    color: var(--font-color);
     writing-mode: horizontal-tb;
     transform: none;
     text-transform: uppercase;
@@ -913,15 +913,15 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 5px;
     font-size: 4vw;
     font-weight: 500;
-    color: #fff;
+    color: var(--font-color);
     margin-bottom: 10px;
   }
 
   .vertical-section hr {
-    color: #fff;
+    color: var(--font-color);
     border: none;
     width: 100px;
-    background-color: #fff;
+    background-color: var(--font-color);
     height: 1px;
     margin-bottom: 10px;
     transform: none;
@@ -931,7 +931,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: 6px;
     font-weight: 100;
-    color: #fff;
+    color: var(--font-color);
     visibility: hidden;
     animation: headerAppear 2s forwards 3.7s;
     z-index: 100;
@@ -1171,12 +1171,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* InvoiSync Case Study */
+.previous-page {
+  position: fixed;
+  top: 10px; 
+  left: 25px;
+  z-index: 100;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: white;
+  padding: 8px 15px;
+}
+
+.previous-page:hover {
+  background-color: var(--grey-color);
+}
+
+.previous-page a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 #overview {
   margin-inline: auto;
   background-color: var(--background-color);
   display: flex;
   gap: 50px;
-  width: 100%; 
+  width: 100%;
 }
 
 #overview-container {
@@ -1195,7 +1219,8 @@ body::-webkit-scrollbar-thumb {
   margin-right: 50px;
 }
 
-#overview-header h1, #overview-header h2 {
+#overview-header h1,
+#overview-header h2 {
   text-transform: uppercase;
   color: grey;
   letter-spacing: 8px;
@@ -1207,11 +1232,12 @@ body::-webkit-scrollbar-thumb {
 
 #project-name {
   font-weight: bold;
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
-#overview-header p, #overview-header ul {
+#overview-header p,
+#overview-header ul {
   margin-bottom: 2rem;
 }
 
@@ -1226,7 +1252,6 @@ body::-webkit-scrollbar-thumb {
 #overview-description {
   flex-basis: 50%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   color: var(--font-color);
   margin: 20px auto;
   font-size: 1.2rem;
@@ -1238,4 +1263,136 @@ body::-webkit-scrollbar-thumb {
 #overview-description p {
   margin-bottom: 40px;
   line-height: 1.45rem;
+}
+
+#showcase img {
+  display: block;
+  margin: 4rem auto;
+  max-width: 70%;
+}
+
+#lightvsdarkimg {
+  margin: 0 auto;
+}
+
+#explanation {
+  width: 100%;
+  max-width: 1680px;
+  margin: 125px auto;
+}
+
+.wrapper-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "Josefin Sans", sans-serif;
+  gap: 60px;
+}
+
+.explanation-title {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3.0rem;
+  text-transform: uppercase;
+}
+
+.col-4 {
+  flex-basis: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sq-container {
+  background-color: gainsboro;
+  border-radius: 3rem;
+  display: flex;
+  height: 300px;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.sq-container h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;  
+  color: var(--font-color);
+  font-size: 2.55rem;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.sq-container p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  margin: 30px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.sq-container i {
+  width: 100%;
+  color: #283f43;
+  font-size: 85px;
+}
+
+#challenges {
+  max-width: 1480px;
+  margin: 200px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  
+}
+
+#challenges h3 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+#challenges ol li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.15rem;
+  margin-right: 50px;
+  list-style-position: inside;
+}
+
+#outcome {
+  max-width: 1480px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+#outcome h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+#outcome p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  max-width: 1300px;
+  margin: 30px 200px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
 }
