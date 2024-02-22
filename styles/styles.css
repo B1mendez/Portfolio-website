@@ -24,27 +24,26 @@
 
 html {
   scroll-behavior: smooth;
-  /* background-color: #000; */
 }
 
-/* This ensures the body always has the space reserved for a scrollbar */
 body {
-  overflow: hidden;
   scrollbar-width: thin;
   scrollbar-color: rgba(97, 97, 97, 0.5) transparent;
-  animation: scrollAppear 0.5s ease forwards 3.7s;
   background-color: var(--background-color);
 }
+
+#index-body {
+  overflow: hidden;
+  animation: scrollAppear 0.5s ease forwards 3.7s;
+} 
 
 /* For Chrome, Safari */
 body::-webkit-scrollbar {
   width: 12px;
-  /* Adjust width to your preference */
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgba(97, 97, 97, 0.5);
-  /* Adjust color to your preference */
 }
 
 #loading-wrapper {
@@ -69,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 #global-header,
 #main-content {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 5s ease;
 }
 
 #global-header {
@@ -1172,6 +1171,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* InvoiSync Case Study */
+.previous-page {
+  position: fixed;
+  top: 10px; 
+  left: 25px;
+  z-index: 100;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: white;
+  padding: 8px 15px;
+}
+
+.previous-page:hover {
+  background-color: var(--grey-color);
+}
+
+.previous-page a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 #overview {
   margin-inline: auto;
   background-color: var(--background-color);
@@ -1273,7 +1296,8 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   align-items: center;
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 3.0rem;
+  text-transform: uppercase;
 }
 
 .col-4 {
@@ -1318,11 +1342,12 @@ body::-webkit-scrollbar-thumb {
 
 #challenges {
   max-width: 1480px;
-  margin: 200px auto;
+  margin: 200px 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 25px;
+  
 }
 
 #challenges h3 {
@@ -1343,6 +1368,7 @@ body::-webkit-scrollbar-thumb {
   margin: 20px auto;
   font-size: 1.15rem;
   margin-right: 50px;
+  list-style-position: inside;
 }
 
 #outcome {
@@ -1364,7 +1390,8 @@ body::-webkit-scrollbar-thumb {
 #outcome p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--font-color);
-  margin: 30px auto;
+  max-width: 1300px;
+  margin: 30px 200px;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--grey-color);
