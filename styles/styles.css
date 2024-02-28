@@ -35,7 +35,7 @@ body {
 #index-body {
   overflow: hidden;
   animation: scrollAppear 0.5s ease forwards 3.7s;
-} 
+}
 
 /* For Chrome, Safari */
 body::-webkit-scrollbar {
@@ -861,6 +861,236 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+/* InvoiSync Case Study */
+.previous-page {
+  position: fixed;
+  top: 10px;
+  left: 25px;
+  z-index: 100;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: white;
+  padding: 8px 15px;
+}
+
+.previous-page:hover {
+  background-color: var(--grey-color);
+}
+
+.previous-page a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#overview {
+  margin-inline: auto;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+#overview-container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+#overview-header {
+  flex-basis: 40%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.15rem;
+  margin-right: 50px;
+}
+
+#overview-header h1,
+#overview-header h2 {
+  text-transform: uppercase;
+  color: grey;
+  letter-spacing: 8px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#project-name {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#overview-header p,
+#overview-header ul {
+  margin-bottom: 2rem;
+}
+
+#overview-header ul {
+  list-style-type: none;
+}
+
+#overview-header ul li {
+  margin-bottom: 8px;
+}
+
+#overview-description {
+  flex-basis: 50%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+  letter-spacing: normal;
+}
+
+#overview-description p {
+  margin-bottom: 40px;
+  line-height: 1.45rem;
+}
+
+#showcase img {
+  display: block;
+  margin: 4rem auto;
+  max-width: 70%;
+}
+
+#lightvsdarkimg {
+  margin: 0 auto;
+}
+
+#explanation {
+  width: 100%;
+  max-width: 1680px;
+  margin: 125px auto;
+}
+
+.wrapper-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "Josefin Sans", sans-serif;
+  gap: 60px;
+}
+
+.explanation-title {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3.0rem;
+  text-transform: uppercase;
+}
+
+.col-4 {
+  flex-basis: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sq-container {
+  background-color: gainsboro;
+  border-radius: 3rem;
+  display: flex;
+  height: 300px;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.sq-container h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  color: var(--font-color);
+  font-size: 2.55rem;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.sq-container p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  margin: 30px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.sq-container i {
+  width: 100%;
+  color: #283f43;
+  font-size: 85px;
+}
+
+#challenges {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.challenge-container {
+  max-width: 1480px;
+  margin: 200px 100px;
+  display: inherit;
+}
+
+#challenges h3 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+#challenges ol li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  margin: 20px auto;
+  font-size: 1.15rem;
+  margin-right: 50px;
+  list-style-position: inside;
+}
+
+#outcome {
+  max-width: 1480px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+#outcome h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+#outcome p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--font-color);
+  max-width: 1300px;
+  margin: 30px 200px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
 @media (min-width: 800px) and (max-width: 1200px) {
   .responsive-break {
     display: inline;
@@ -1168,231 +1398,75 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: inherit;
   }
-}
 
-/* InvoiSync Case Study */
-.previous-page {
-  position: fixed;
-  top: 10px; 
-  left: 25px;
-  z-index: 100;
-  border-radius: 10px;
-  border: 2px solid black;
-  background: white;
-  padding: 8px 15px;
-}
+  .previous-page {
+    left: 10px;
+  }
 
-.previous-page:hover {
-  background-color: var(--grey-color);
-}
+  #overview {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+  }
 
-.previous-page a {
-  text-decoration: none;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
-  color: var(--font-color);
-  font-size: 18px;
-  text-transform: uppercase;
-}
+  #overview-header {
+    font-size: 1rem;
+    margin-right: auto;
+  }
 
-#overview {
-  margin-inline: auto;
-  background-color: var(--background-color);
-  display: flex;
-  gap: 50px;
-  width: 100%;
-}
+  #overview-header h1,
+  #overview-header h2 {
+    font-size: 1rem; 
+  }
 
-#overview-container {
-  width: 100%;
-  max-width: 1480px;
-  margin: 0 auto;
-}
+  #project-name {
+    font-size: 2rem;
+  }
 
-#overview-header {
-  flex-basis: 40%;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
-  color: var(--font-color);
-  margin: 20px auto;
-  font-size: 1.15rem;
-  margin-right: 50px;
-}
+  .wrapper-1 {
 
-#overview-header h1,
-#overview-header h2 {
-  text-transform: uppercase;
-  color: grey;
-  letter-spacing: 8px;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
+  }
 
-#project-name {
-  font-weight: bold;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
+  #challenges {
+    flex-direction: column;
+  }
 
-#overview-header p,
-#overview-header ul {
-  margin-bottom: 2rem;
-}
+  .challenge-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
 
-#overview-header ul {
-  list-style-type: none;
-}
+  .challenge-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-#overview-header ul li {
-  margin-bottom: 8px;
-}
+  #challenges ol li{
+    text-align: left;
+    margin: 15px 15px;
+  }
 
-#overview-description {
-  flex-basis: 50%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--font-color);
-  margin: 20px auto;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--grey-color);
-  letter-spacing: normal;
-}
+  #challenges h3{
+    font-size: 1.5rem;
+  }
 
-#overview-description p {
-  margin-bottom: 40px;
-  line-height: 1.45rem;
-}
+  #outcome {
+    margin: 100px auto;
+  }
 
-#showcase img {
-  display: block;
-  margin: 4rem auto;
-  max-width: 70%;
-}
+  #outcome h3 {
+    font-size: 1.5rem;
+  }
 
-#lightvsdarkimg {
-  margin: 0 auto;
-}
-
-#explanation {
-  width: 100%;
-  max-width: 1680px;
-  margin: 125px auto;
-}
-
-.wrapper-1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  font-family: "Josefin Sans", sans-serif;
-  gap: 60px;
-}
-
-.explanation-title {
-  flex-basis: 35%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 3.0rem;
-  text-transform: uppercase;
-}
-
-.col-4 {
-  flex-basis: 65%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.sq-container {
-  background-color: gainsboro;
-  border-radius: 3rem;
-  display: flex;
-  height: 300px;
-  padding: 40px;
-  flex-direction: column;
-}
-
-.sq-container h3 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;  
-  color: var(--font-color);
-  font-size: 2.55rem;
-  margin-right: 50px;
-  text-align: center;
-}
-
-.sq-container p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--font-color);
-  margin: 30px auto;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--grey-color);
-}
-
-.sq-container i {
-  width: 100%;
-  color: #283f43;
-  font-size: 85px;
-}
-
-#challenges {
-  max-width: 1480px;
-  margin: 200px 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 25px;
-  
-}
-
-#challenges h3 {
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  color: black;
-  letter-spacing: 8px;
-  font-size: 3rem;
-  padding-top: 5px;
-  padding-bottom: 60px;
-}
-
-#challenges ol li {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  color: var(--font-color);
-  margin: 20px auto;
-  font-size: 1.15rem;
-  margin-right: 50px;
-  list-style-position: inside;
-}
-
-#outcome {
-  max-width: 1480px;
-  margin: 200px auto;
-  text-align: center;
-}
-
-#outcome h3 {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  color: black;
-  letter-spacing: 8px;
-  font-size: 3rem;
-  padding-top: 5px;
-  padding-bottom: 60px;
-}
-
-#outcome p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--font-color);
-  max-width: 1300px;
-  margin: 30px 200px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--grey-color);
+  #outcome p {
+    margin: auto;
+    font-size: 1rem;
+    margin: auto 20px;
+  }
 }
