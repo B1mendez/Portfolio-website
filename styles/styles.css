@@ -1091,7 +1091,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--grey-color);
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (width > 700px) and (width < 1200px) {
   .responsive-break {
     display: inline;
   }
@@ -1103,9 +1103,93 @@ body::-webkit-scrollbar-thumb {
   #global-header nav ul li a {
     font-size: 14px;
   }
+
+  #overview {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    display: block;
+  }
+
+  #overview-header {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+
+  #overview-header h1,
+  #overview-header h2 {
+    font-size: 1rem; 
+  }
+
+  #project-name {
+    font-size: 2rem;
+  }
+
+  .wrapper-1 {
+    display: block;
+  }
+
+  .explanation-title {
+    font-size: 2.5rem;
+  }
+  
+  .col-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sq-container i {
+    font-size: 50px;
+  }
+
+  #challenges {
+    flex-direction: column;
+  }
+
+  .challenge-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .challenge-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #challenges ol li{
+    text-align: left;
+    margin: 15px 15px;
+  }
+
+  #challenges h3{
+    font-size: 2.5rem;
+  }
+
+  #outcome {
+    margin: 100px auto;
+  }
+
+  #outcome h3 {
+    font-size: 2.5rem;
+  }
+
+  #outcome p {
+    margin: auto;
+    font-size: 1.5rem;
+    margin: auto 20px;
+  }
+
 }
 
-@media (width < 800px) {
+@media (width < 700px) {
   body {
     overflow-x: hidden;
   }
@@ -1424,7 +1508,32 @@ body::-webkit-scrollbar-thumb {
   }
 
   .wrapper-1 {
+    display: block;
+  }
 
+  .col-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .explanation-title {
+    font-size: 1.5rem;
+  }
+
+  .sq-container {
+    height: 200px;
+  }
+  
+  .sq-container h3{
+    font-size: 1.2rem;
+    margin: auto;
+  }
+
+  .sq-container p{
+    font-size: 1rem;
+  }
+
+  .sq-container i {
+    font-size: 40px;
   }
 
   #challenges {
